@@ -1,0 +1,227 @@
+@charset "utf-8";
+/* CSS Document */
+.initials {
+  position: absolute;
+  z-index: 10;
+  top:12%;
+  margin-left: 5%;
+  display: flex;
+  line-height: 50px;
+  font-size:45px;
+  font-weight:bold;
+  letter-spacing:0px;
+  color: #505050;
+  font-family: 'Nanum Gothic', sans-serif;
+}
+.initials:hover {
+  -webkit-text-stroke: 1px #42A9FF;
+  color: white;
+}
+
+
+
+#menu {
+    width: 550px;
+    height: 35px;
+    font-size: 20px;
+    /*font-family: 'Nanum Gothic', sans-serif;*/
+    font-family: 'Muli', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    list-style: none;
+    margin-left: 60%;
+    margin-top: 8%;
+    word-spacing: 50px;
+}
+
+    #menu ul {
+      height: auto;
+      padding: 8px 0px;
+      margin: 0px;
+    }
+
+    #menu li {
+    display: inline;
+    padding: 10px;
+    }
+
+    #menu a {
+    text-decoration: none;
+    color: #505050;
+    padding: 8px 8px 8px 8px;
+}
+
+    #menu a:hover {
+    color: #FF8E70;
+    background-color: #FFF;
+}
+
+.kivaimage1 {
+  margin-top: 10%;
+  margin-left: 48%;
+  float: left;
+  position: absolute;
+
+}
+
+.kivaimage1intro{
+  font-size: 45px;
+  /*color: #546A76;*/
+  color: #202020;
+  font-family: 'Cantarell', sans-serif;
+  font-weight: bold;
+  float: left;
+  position: absolute;
+  margin-left: -69%;
+  margin-top: -63%;
+
+}
+
+#kivaleftrec{
+  height: 5px;
+  width: 50px;
+  margin-left: -69%;
+  margin-top: -70%;
+  background-color: #49953f;
+  float: left;
+}
+#kivarightrec{
+  height: 5px;
+  width: 300px;
+  margin-left: -60%;
+  margin-top: -70%;
+  background-color: #202020;
+  float: left;
+}
+
+
+.kivadate {
+  /*color: #e0e0e0;*/
+  color: #d6d6d6;
+  float: left;
+  position: absolute;
+  margin-left: -68%;
+  /*margin-top: -73%;*/
+  margin-top: -48%;
+  font-size: 15px;
+  font-family: 'Muli', sans-serif;
+}
+
+.kivaparagraph {
+  font-size: 16px;
+  font-family: 'Muli', sans-serif;
+  margin-left: -68%;
+  margin-top: -38%;
+  color: #808080;
+  line-height: 30px;
+
+}
+
+.quote1{
+  font-style: italic;
+  background: none;
+  color: #808080;
+}
+
+.quote0{
+  font-weight: bold;
+  background:none;
+  font-size: 20px;
+  color: #808080;
+}
+/*
+#kivastep1leftrec{
+  height: 5px;
+  width: 50px;
+  margin-left: -69%;
+  margin-top: 80px;
+  background-color: #49953f;
+  float: left;
+}
+#kivastep1rightrec{
+  height: 5px;
+  width: 300px;
+  margin-left: -60%;
+  margin-top: 80px;
+  background-color: #202020;
+  float: left;
+}
+*/
+.thinsquare{
+  height: 1.5px;
+  width: 70px;
+  background-color: #d6d6d6;
+  margin-top: 150px;
+}
+
+.Takeaways{
+  font-size: 20px;
+  color: #202020;
+  font-family: 'Cantarell', sans-serif;
+  font-weight: bold;
+  float: left;
+  position: absolute;
+  margin-left: -15%;
+  margin-top: 30px;
+
+}
+
+.takeawaysparagraph {
+  font-size: 16px;
+  font-family: 'Muli', sans-serif;
+  margin-left: 2%;
+  margin-top: 190px;
+  color: #808080;
+  line-height: 30px;
+
+}
+
+ul.takeawaysparagraph {
+  list-style-type: square;
+
+}
+
+.differenceopening {
+  font-weight: bold;
+  font-size: 16px;
+  font-family: 'Muli', sans-serif;
+  color: #808080;
+  background: none;
+  margin-left: 13%;
+  margin-top: 74%;
+}
+
+
+/*
+.kivarec {
+  position: absolute;
+  height: 100px;
+  width: 500px;
+  background-color: #1ab188;
+  float: left;
+  margin-left: 500px;
+  margin-top: -150%;
+}*/
+
+
+/*
+#kivarec {
+  position: absolute;
+  height: 10px;
+  width: 90px;
+  background-color: #202020;
+  margin-left: 11%;
+  float: left;
+  margin-top: 8%;
+}
+
+.kivaheadingbold {
+  position: absolute;
+  font-size: 25px;
+  background: none;
+  font-family: 'Nanum Gothic', sans-serif;
+  position: absolute;
+  float: right;
+  margin-left: 19%;
+  margin-top: 7%;
+}*/

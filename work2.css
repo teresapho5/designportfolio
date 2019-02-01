@@ -507,7 +507,7 @@ color: #808080;
     width: 670px;
     background-color: #202020;
     margin-top: -5%;
-    margin-left: -27%;
+    margin-left: -7%;
 
   }
 
@@ -517,7 +517,7 @@ color: #808080;
 }
 
 .timeline{
-  height: 5670px;
+  height: 6430px;
   margin-left:-60%;
   margin-top: -15%;
   border-left: 2px dashed #808080;
@@ -1008,17 +1008,37 @@ color: #808080;
 
 }
 
-.gems{
-  font-size: 35px;
+.time4{
+  height:10px;
+  width: 50px;
+  background-color: #808080;
+  margin-top:8%;
+  margin-left:-62%;
+
+}
+
+.step4{
+  font-size: 15px;
   font-family: 'Muli', sans-serif;
+  color: #808080;
+  margin-left:-53%;
+  margin-top:-3%;
+  font-weight: bold;
+
+}
+
+.gems{
+
   color: #202020;
-  margin-left: -45%;
-  margin-top: 75%;
+  margin-left: -42%;
+  margin-top: 5%;
+  font-size: 30px;
+  font-family: 'Roboto Slab', serif;
 
 }
 
 .bm{
-  margin-left: -59%;
+  margin-left: -48%;
   margin-top: -1%;
   position: absolute;
 }
@@ -1040,7 +1060,7 @@ color: #808080;
     width: 670px;
     background-color: #202020;
     margin-top: 98%;
-    margin-left: 74%;
+    margin-left: 70%;
 
   }
 
@@ -1049,6 +1069,116 @@ color: #808080;
 
   }
 
+
+.affinity{
+  color: #202020;
+  margin-left: -42%;
+  margin-top: -70%;
+  font-size: 30px;
+  font-family: 'Roboto Slab', serif;
+
+}
+
+.map{
+  margin-left: -42%;
+  margin-top: 6%;
+  position: absolute;
+}
+
+.idea{
+  color: #202020;
+  margin-left: -42%;
+  margin-top: 75%;
+  font-size: 30px;
+  font-family: 'Roboto Slab', serif;
+
+}
+
+.final{
+  margin-left: -42%;
+  margin-top: 6%;
+  position: absolute;
+}
+
+
+.userjourney{
+  color: #202020;
+  margin-left: -42%;
+  margin-top: 75%;
+  font-size: 30px;
+  font-family: 'Roboto Slab', serif;
+
+}
+
+.storyboard{
+  margin-left: -42%;
+  margin-top: 6%;
+  position: absolute;
+}
+
+
+
+
+.mid{
+
+  margin-left: -68%;
+  margin-top: 80%;
+
+  font-size: 50px;
+  color: #FF8E70;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  float: left;
+  position: absolute;
+
+
+  }
+
+.left5{
+    height: 1px;
+    width: 670px;
+    background-color: #202020;
+    margin-top: 88%;
+    margin-left: 35%;
+
+  }
+
+.hcd{
+  margin-top:6%;
+  margin-left: -42%;
+
+}
+
+.reflect{
+  margin-left: -68%;
+  margin-top: 10%;
+
+  font-size: 50px;
+  color: #FF8E70;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  float: left;
+  position: absolute;
+
+}
+
+.left6{
+    height: 1px;
+    width: 670px;
+    background-color: #202020;
+    margin-top: 20%;
+    margin-left: -10%;
+
+  }
+
+.reflectpara{
+
+  line-height: 1.7;
+  max-width: 150%;
+  margin: 20 auto;
+  margin-left: -66%;
+  margin-top:5%;
+}
 
 
 /*
