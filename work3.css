@@ -58,10 +58,15 @@
 
 
 .head{
-  margin-left: 0%;
+  max-width: 100%;
+  overflow-x: hidden;
 
 }
 
+body{
+
+    overflow-x: hidden;
+}
 .vrimage1intro{
   font-size: 45px;
   /*color: #546A76;*/
@@ -72,6 +77,7 @@
   position: absolute;
   margin-left: 11.5%;
   margin-top: 13%;
+    overflow:hidden;
 
 }
 
@@ -84,6 +90,7 @@
   background-color: #42bff4;
   float: left;
   position:absolute;
+    overflow:hidden;
 }
 #vrrightrec{
   height: 5px;
@@ -93,12 +100,14 @@
   background-color:#505050;
   float: left;
   position:absolute;
+    overflow:hidden;
 }
 
 .vrimage1 {
   margin-top:  25%;
   margin-left: 60%;
   position: absolute;
+    overflow:hidden;
 
 }
 
@@ -113,6 +122,7 @@
   margin-top: 23%;
   font-size: 15px;
   font-family: 'Muli', sans-serif;
+    overflow:hidden;
 }
 
 .vrparagraph {
@@ -123,6 +133,7 @@
   color: #808080;
   line-height: 30px;
   overflow: hidden;
+    overflow:hidden;
 
 }
 
@@ -130,6 +141,7 @@
   font-style: italic;
   background: none;
   color: #808080;
+    overflow:hidden;
 }
 
 .quote0{
@@ -137,6 +149,7 @@
   background:none;
   font-size: 20px;
   color: #808080;
+    overflow:hidden;
 }
 
 .quote05{
@@ -144,6 +157,7 @@
   background:none;
   font-size: 15px;
   color: #808080;
+    overflow:hidden;
 }
 
 .vid{
@@ -151,22 +165,29 @@
   margin-top: 5%;
   float: left;
   position: absolute;
+  overflow:hidden;
 
 }
-
 .vidpara{
   position:absolute;
   float:left;
-  margin-top:28%;
-  margin-left:30%;
+  margin-top:30%;
+  margin-left:34%;
   font-size: 12px;
   font-family: 'Muli', sans-serif;
   color: #808080;
   text-align: center;
-  width: 40%;     /* specify a width! */
+  width: 35%;
   margin: 10 auto;
-
+  overflow:hidden;
 }
+
+.bold{
+  font-weight: 400;
+  background: none;
+  overflow:hidden;
+}
+
 
 .team{
   position:absolute;
@@ -175,7 +196,7 @@
   font-size:13px;
 
   background:none;
-  width: 70%;     /* specify a width! */
+  width: 70%;
   margin: 10 auto;
   margin-top: 35%;
   margin-left:12%;
@@ -191,11 +212,7 @@ background:none;
 color: #42bff4;
 }
 
-.bold{
-  font-weight: 400;
-  background: none;
 
-}
 
 .bold1{
   font-weight:600;
@@ -211,22 +228,148 @@ color: #42bff4;
   margin-left: 35%;
   background:none;
   color: #42bff4;
-  margin-top:33%;
+  margin-top:32%;
   position:absolute;
   font-family: 'Muli', sans-serif;
-  width: 70%;     /* specify a width! */
+  width: 70%;
   margin: 10 auto;
 }
 
 .goalspara{
   position:absolute;
-  margin-top:37%;
+  margin-top:36%;
   color: #808080;
   font-size:14px;
   font-family: 'Muli', sans-serif;
 
   background:none;
   margin-left:35%;
-  width: 30%;     /* specify a width! */
+  width: 30%;
   margin: 10 auto;
+}
+
+
+.progress{
+  font-weight: bold;
+  font-size: 20px;
+  margin-left: 12%;
+  background:none;
+  color: #42bff4;
+  margin-top: 65%;
+  position:absolute;
+  font-family: 'Muli', sans-serif;
+  width: 70%;
+  margin: 10 auto;
+}
+
+.progresspara{
+  position:absolute;
+  color: #808080;
+  text-align: left;
+  font-size:13px;
+
+  background:none;
+  width: 55%;
+  margin: 10 auto;
+  margin-top: 69%;
+  margin-left:12%;
+  font-family: 'Muli', sans-serif;
+
+}
+
+.ca{
+  font-weight: bold;
+  font-size: 20px;
+  margin-left: 12%;
+  background:none;
+  color: #42bff4;
+  margin-top: 75%;
+  position:absolute;
+  font-family: 'Muli', sans-serif;
+  width: 70%;
+  margin: 10 auto;
+}
+#mb1{
+  margin-left: 12%;
+  margin-top: 80%;
+  position:absolute;
+
+}
+
+#mb2{
+  margin-left: 40%;
+  margin-top: 80%;
+  position:absolute;
+
+}
+
+#theme{
+  margin-left: 12%;
+  margin-top: 96.5%;
+  position:absolute;
+
+}
+
+#ls{
+  margin-left: 40%;
+  margin-top: 96.5%;
+  position:absolute;
+
+}
+
+
+#colors{
+  margin-left: 12%;
+  margin-top: 113.5%;
+  position:absolute;
+
+}
+
+#glow{
+  margin-left: 40%;
+  margin-top: 113.5%;
+  position:absolute;
+
+}
+
+#plants{
+  margin-left: 12%;
+  margin-top: 130.5%;
+  position:absolute;
+
+}
+
+#const{
+  margin-left: 40%;
+  margin-top: 130.5%;
+  position:absolute;
+
+}
+
+.refl{
+  font-weight: bold;
+  font-size: 20px;
+  margin-left: 12%;
+  background:none;
+  color: #42bff4;
+  margin-top: 149%;
+  position:absolute;
+  font-family: 'Muli', sans-serif;
+  width: 70%;
+  margin: 10 auto;
+}
+
+.reflpara{
+  position:absolute;
+  color: #808080;
+  text-align: left;
+  font-size:13px;
+
+  background:none;
+  width: 55%;
+  margin: 10 auto;
+  margin-top: 153%;
+  margin-left:12%;
+  font-family: 'Muli', sans-serif;
+
 }
