@@ -20,6 +20,12 @@
 
 
 
+@import url(//fonts.googleapis.com/css?family=Nanum+Gothic:800);
+@import url(//fonts.googleapis.com/css?family=Rubrik:800);
+@import url(//fonts.googleapis.com/css?family=Roboto+Mono:800);
+@import url(//fonts.googleapis.com/css?family=Cantarell:800);
+@import url(//fonts.googleapis.com/css?family=Muli:400,700,800);
+
 #menu {
     width: 550px;
     height: 35px;
