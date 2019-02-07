@@ -80,6 +80,10 @@
     color: #42A9FF;
     background-color: #FFF;
 }
+body{
+  overflow-x: hidden;
+
+}
 
 .introduction {
   /*font-family: 'Nanum Gothic', sans-serif;*/
@@ -107,6 +111,12 @@ mark.bigger {
   font-size: 40px;
   background: none;
 
+
+}
+
+body{
+
+  overflow-x:hidden;
 
 }
 /*
