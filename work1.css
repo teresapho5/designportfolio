@@ -12,10 +12,12 @@
   letter-spacing:0px;
   color: #505050;
   font-family: 'Nanum Gothic', sans-serif;
+    text-decoration: none;
 }
 .initials:hover {
   -webkit-text-stroke: 1px #42A9FF;
   color: white;
+    text-decoration: none;
 }
 
 
@@ -52,11 +54,14 @@
 }
 
     #menu a:hover {
-    color: #FF8E70;
+    color: #42A9FF;
     background-color: #FFF;
 }
 
+body{
 
+  overflow-x:hidden;
+}
 
 .airbnbimage1intro{
   font-size: 45px;
