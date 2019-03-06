@@ -1,5 +1,30 @@
 @charset "utf-8";
 /* CSS Document */
+
+@media (orientation: landscape) {
+  body {
+    flex-direction: row;
+  }
+}
+
+@media (orientation: portrait) {
+  body {
+    flex-direction: column;
+  }
+}
+
+@media (orientation: landscape) {
+  head{
+    flex-direction: row;
+  }
+}
+
+@media (orientation: portrait) {
+  head {
+    flex-direction: column;
+  }
+}
+
 .initials {
   position: absolute;
   z-index: 10;
