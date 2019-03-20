@@ -25,6 +25,8 @@
   background-color: black;
   color: white;
 }*/
+@import url(//fonts.googleapis.com/css?family=Muli:400,600,800);
+
 .initials {
   position: absolute;
   z-index: 10;
