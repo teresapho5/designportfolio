@@ -62,7 +62,7 @@ body{
 
   overflow-x:hidden;
 }
-
+/*
 .intro{
   font-size: 30px;
   color: #505050;
@@ -82,6 +82,156 @@ body{
 .logobox{
     position:absolute;
     margin-left: 61%;
-    margin-top: 13%;    /* if you want it vertically middle of the navbar. */
+    margin-top: 13%;
 
 }
+*/
+.intro{
+  font-size:30px;
+  font-family: 'Open Sans', sans-serif;
+  width:55%;
+  margin: 1 auto;
+  margin-left: 21%;
+  text-align: center;
+  margin-top:7%;
+  position: absolute;
+  font-weight:400;
+  color:#505050;
+
+
+}
+.blue{
+  color:  #78bdf7;
+  background:none;
+  font-size:50px;
+  letter-spacing: 5px;
+  font-weight:800;
+  line-height: 1.6;
+}
+
+.gd{
+  font-size:30px;
+  font-family: 'Open Sans', sans-serif;
+  width:55%;
+  margin: 1 auto;
+  margin-left: 10%;
+  text-align: left;
+  margin-top:27%;
+  position: absolute;
+  font-weight:700;
+  color:#505050;
+
+}
+
+.gd2{
+  width:55%;
+  margin: 1 auto;
+  margin-left: 10%;
+
+  margin-top:35%;
+  position: absolute;
+
+
+
+}
+
+.gd3{
+  width:55%;
+  margin: 1 auto;
+  margin-left: 45%;
+
+  margin-top:35%;
+  position: absolute;
+
+
+
+}
+.gd4{
+  width:55%;
+  margin: 1 auto;
+  margin-left: 10%;
+
+  margin-top:58%;
+  position: absolute;
+
+
+
+}
+
+.lo1{
+  width:55%;
+  margin: 1 auto;
+  margin-left: 48%;
+
+  margin-top:61%;
+  position: absolute;
+
+
+
+}
+
+.an{
+  font-size:30px;
+  font-family: 'Open Sans', sans-serif;
+  width:55%;
+  margin: 1 auto;
+  margin-left: 10%;
+  text-align: left;
+  margin-top:85%;
+  position: absolute;
+  font-weight:700;
+  color:#505050;
+
+
+}
+.an1{
+  width:55%;
+  margin: 1 auto;
+  margin-left: 10%;
+
+  margin-top:91%;
+  position: absolute;
+
+
+
+}
+.an2{
+  width:55%;
+  margin: 1 auto;
+  margin-left: 35%;
+
+  margin-top:91%;
+  position: absolute;
+
+
+
+}
+.an3{
+  width:55%;
+  margin: 1 auto;
+  margin-left: 60%;
+
+  margin-top:91%;
+  position: absolute;
+
+
+
+}
+/*
+.ph{
+  font-size:30px;
+  font-family: 'Open Sans', sans-serif;
+  width:55%;
+  margin: 1 auto;
+  margin-left: 10%;
+  text-align: left;
+  margin-top:113%;
+  position: absolute;
+  font-weight:700;
+  color:#505050;
+
+
+
+
+}
+*/
