@@ -1,272 +1,531 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Portfolio Home</title>
-<link href="work1.css" rel="stylesheet" type="text/css">
-<link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:800|Rubik" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Muli|Roboto+Mono" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Muli:400,700,800" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Cantarell" rel="stylesheet">
-<link rel='shortcut icon' type='image/x-icon' href='fai.ico' />
+  <title>Portfolio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="work1.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
+
+
+
 </head>
 <body>
-<div class="initials">	<a href="Portfolio.html" class="initials"> TP. </a></div>
-	<div class= "menuclass">
-		<div id="menu">
-			<ul>
-				<li><a href="Portfolio.html">Works</a></li>
-				<li><a href="about.html">About</a></li>
-				<li><a href="misc.html">Misc</a></li>
-			</ul>
+
+<script>$(function(){  // $(document).ready shorthand
+  $('.monster').fadeIn('slow');
+});
+
+$(document).ready(function() {
+
+    /* Every time the window is scrolled ... */
+    $(window).scroll( function(){
+
+        /* Check the location of each desired element */
+        $('.container').each( function(i){
+
+            var bottom_of_object = $(this).position().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+            /* If the object is completely visible in the window, fade it it */
+            if( bottom_of_window > bottom_of_object ){
+
+                $(this).animate({'opacity':'1'},1500);
+
+            }
+
+        });
+        $('.col-4').each( function(i){
+
+            var bottom_of_object = $(this).position().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+            /* If the object is completely visible in the window, fade it it */
+            if( bottom_of_window > bottom_of_object ){
+
+                $(this).animate({'opacity':'1'},1500);
+
+            }
+
+        });
+
+    });
+
+});</script>
+
+
+  <script>
+  // When the user clicks on div, open the popup
+  function myFunction() {
+    var popup = document.getElementById("myPopup");
+    popup.classList.toggle("show");
+  }
+  </script>
+
+  <div class="header">
+
+    <div class="progress-container">
+      <div class="progress-bar" id="myBar"></div>
+    </div>
+  </div>
+
+
+
+
+	<div class="jumbotron text-left" style="background:transparent !important" class="jumbotron">
+	  <div class="initials"><a href="Works.html" class="initials"> TP. </a></div>
 	</div>
+	<nav class="navbar navbar-expand-lg navbar-light ">
+
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+	  </button>
+	  <div class="collapse navbar-collapse" id="navbarNav">
+	    <ul class="navbar-nav ml-auto">
+	      <li class="nav-item active">
+	        <a class="nav-link" href="#">Works <span class="sr-only">(current)</span></a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#">About</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#">Misc</a>
+	      </li>
+
+	    </ul>
+	  </div>
+	</nav>
+
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-4">
+        <div id= "airbnbleftrec"></div>
+
+      </div>
+      <div class="col-4">
+        <div id="airbnbrightrec"></div>
+
+      </div></div>
+
+      <div class="row">
+      <div class="col"><div class="airbnbimage1intro">Airbnb Experience Web Redesign</div>
+      </div></div>
+    </div>
+
+    <div class="container">
+  <div class="row justify-content-around">
+    <div class="col-3"><div class="airbnbdate"> November 2018 - December 2018 </div>
 </div>
-<!--<div class= "introduction"> <mark class="bigger"> Hello. My name is <mark class= "blue"> Teresa Pho</mark>. </mark> <br> <br> <mark class="thin">I am a Product Designer x Virtual Reality Developer x Healthcare Advocate </mark></br> </br> who loves to break down challenges and create products that bridge the  <br><br> gap between empathy, creativity, and design. </br></br> </div>
--->
-<!--<div class= "kiva-heading"> <mark class="kivaheadingbold"> Kiva Wed Redesign </mark></div>
-	<div id="kivarec"></div>-->
-
-<div class="airbnbimage1intro">Airbnb Experience Web Redesign</div>
-	<div class="airbnbbigrec">
-		<div id= "airbnbleftrec"></div>
-		<div id="airbnbrightrec"></div> </div>
-		<div class="airbnbimage1"> <img src="airbnbimage1persp.png" alt="airbnbintro" width="550" height="400">
-<div class="airbnbdate"> November 2018 - December 2018 </div>
-<div class="airbnbparagraph"> <mark class="quote0"> Let's first understand them. <br>What are they? What makes this platform different? <br> </mark> Airbnb Experience offers a selection of experiences and activities <br> to choose from. It tells the story of the <mark class="quote07">hosts' love and perspectives,</mark><br> whether it is their love of street food, sewing, or the history<br> of their neighborhood. family members with small businesses,<br> the mission of this nonprofit. <br> <br>
-	<mark class="quote1">"The free exploring mind of an individual human <br>is the most valuable thing in the world." </mark><br><br><br><br> </div>
-
-<div class="Introduction"> Let's dive right in! <mark class="quote06">Adventure and experience awaits!</mark></div>
-
-<div class="space"><br><br></div>
-<div class="introbox">
-	<div class="rolebox"></div>
-	<div class="role"> <mark class="role1">1.A</mark> Role </div>
-	<div class="skillsbox"></div>
-	<div class="skills"><mark class="skills1">1.B</mark> Skills </div>
-	<div class="toolbox"></div>
-	<div class="tools"><mark class="tools1">1.C</mark> Tools </div>
+    <div class="col-4">		<div class="airbnbimage1"> <img src="airbnbimage1persp.png" alt="airbnbintro" width="550" height="400">
 </div>
+    </div></div>
 
-<div class="texts">
-	<div class="text1"> UI/UX Designer </div>
-	<div class="text2"> User Test<br>
-		Research<br>
-		Sketch<br>
-		Prototypes<br>
-		(Low-Fi & High-Fi) </div>
-	<div class="text3">
-		Adobe Photoshop <br>
+  <div class="row justify-content-around">
+    <div class="col-8"><div class="airbnbparagraph"> <mark class="quote0"> Let's first understand them. <br>What are they? What makes this platform different? <br> </mark> Airbnb Experience offers a selection of experiences and activities <br> to choose from. It tells the story of the <mark class="quote07">hosts' love and perspectives,</mark><br> whether it is their love of street food, sewing, or the history<br> of their neighborhood. family members with small businesses,<br> the mission of this nonprofit. <br> <br>
+
+    	<mark class="quote1">"The free exploring mind of an individual human <br>is the most valuable thing in the world." </mark><br><br><br><br> </div>
+    </div>
+</div></div>
+
+<div class="container"
+  <div class="row justify-content-center">
+    <div class="col"><div class="Introduction"> Let's dive right in! <mark class="quote06">Adventure and experience awaits!</mark></div>
+</div></div>
+
+  <div class="container">
+    <div class="row justify-content-start">
+
+      <div class="col-4"><div class="role"> ROLE</div></div>
+      <div class="col-4"><div class="problem">THE PROBLEM</div></div>
+    </div>
+</div>
+<div class="container">
+    <div class="row justify-content-start">
+        <div class="col-4"><div class="role2"> UI/UX Designer</div></div>
+        <div class="col-7"><div class="problempara">
+        Over this past decade, there has been a <mark class="p1">progression in the exchanges and sharing of new hobbies and activities.</mark> The increasing amount of work-related or recreational traveling today and curiosity for trying out new things has become an encouraged trend and integrated lifestyle.
+
+        What makes Airbnb Experiences unique is that the <mark class="p1">activities are designed and led by inspiring locals.</mark> And for this, Airbnb Experience is one of the go-to-destinations that users visit when discovering new activities.
+
+        However, some functions and services offered by Airbnb’s web platform can be <mark class="p1">unintuitive and overwhelming</mark> for some users, as well as <mark class="p1">lacking in options in other features</mark>.
+
+        </div></div></div>
+
+</div>
+<div class="container">
+    <div class="row justify-content-start">
+      <div class="col-4"><div class="skills"> SKILLS</div></div>
+    </div>
+</div>
+<div class="container">
+    <div class="row justify-content-start">
+      <div class="col-4"><div class="skills2">User Test<br>
+        User Research<br>
+        Sketch<br>
+        Prototypes<br>
+        (Low-Fi & High-Fi)</div></div>
+  </div>
+</div>
+<div class="container">
+  <div class="row justify-content-start">
+    <div class="col-4"><div class="tools"> TOOLS</div></div>
+  </div>
+</div>
+<div class="container">
+  <div class="row justify-content-start">
+    <div class="col-4"><div class="tools2">Adobe Photoshop <br>
 		Adobe XD <br>
-		Concept Board <br></div>
-	</div>
+		Concept Board</div></div>
+</div>
+</div>
 
-<div class="problem">
-	<div class="problem1"><mark class="p0">The Problem</mark></div>
-	<div class="problempara">
-<br><br>Over this past decade, there has been a <mark class="p1">progression in the exchanges and sharing of new hobbies and activities.</mark> The increasing amount of work-related or recreational traveling today and curiosity for trying out new things has become an encouraged trend and integrated lifestyle.
-
-<br><br>What makes Airbnb Experiences unique is that the <mark class="p1">activities are designed and led by inspiring locals.</mark> And for this, Airbnb Experience is one of the go-to-destinations that users visit when discovering new activities.
-
-<br><br>However, some functions and services offered by Airbnb’s web platform can be <mark class="p1">unintuitive and overwhelming</mark> for some users, as well as <mark class="p1">lacking in options in other features</mark>.
+<div class="container">
+<div class="row justify-content-start">
+  <div class="col-4"><div class="tools"> AUDIENCE</div></div>
 
 </div>
-<!--
-<div class="diffproblems">
-	<div class="prob1"> <img src="prob1.png" alt="prob1" width="400" height="300"></div>
-	<div class="prob1text"> Arbitrary subcategories, can seem limiting to users <br> (San Francisco Experience Page) </div>
-	<div class="prob2"> <img src="prob2.png" alt="prob2" width="400" height="300"></div>
-	<div class="prob2text"> Few filtering options (General Experience Page) </div>
-	<div class="prob3"> <img src="prob3.png" alt="prob3" width="400" height="300"></div>
-	<div class="prob3text"> Not intuitive to navigate through out platforms (San Francisco Experience Page) </div>
-	<div class="prob4"> <img src="prob4.png" alt="prob4" width="400" height="300"></div>
-	<div class="prob4text"> Inconvenient display of categories on home screen (General Experiences Page) </div>
-</div>-->
-<div class="space000"><br><br></div>
-<div class="problemstitle"> Eminent Problems</div>
-<div class="allprob"><img src="allprob.png" alt="allprob" width="700" height="500" class="center"></div>
-<div class="centerall">
-	<div class="question">The Question</div>
-		<div class="questtext"> "How might we improve the user’s digital experience with the platform and streamline any add-ons to ensure a more intuitive and smooth navigation through the Airbnb Experience site?"</div>
-	<div class="space00"><br></div>
+</div>
+<div class="container">
+<div class="row justify-content-start">
+  <div class="col-4"><div class="tools2">New/Regular Customers <br>Hosts</div></div>
 
-	<div class="userresearch">User Research & Key Insights</div>
-	<div class="userresearchtext">
-	<mark class="quote08">Research and comparisons between the variety of companies</mark> that offer similar services as Airbnb Experience were executed along with a couple <mark class="quote08">surveys with about 10 college students and 10 adults</mark> all of which who have used and/or were curious of using the platform for their own personal needs.</div>
+</div>
+</div>
+<div class="container">
 
-	<div class="surveypic"><img src="surveypic.png" alt="survey" width="500" height="600"></div>
+<div class="row justify-content-end">
+<div class="col-4"><div class="emprob"> EMINENT PROBLEMS</div></div></div>
+</div>
+
+<div class="container">
+<div class="row justify-content-end">
+<div class="col-8">
+<div class="allprob"><img src="allprob.png" alt="allprob" width="700" height="500" class="center"></img></div></div></div>
+
+</div>
+
+<div class="container">
+  <div class="row">
+  <div class="col-4"><div class="question"> THE QUESTION</div></div>
+
+  <div class="col-7"><div class="question2"> "How might we improve the user’s digital experience with the platform and streamline any add-ons to ensure a more intuitive and smooth navigation through the Airbnb Experience site?"</div></div></div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+    <div class="col-4"><div class="research"> USER RESEARCH & KEY INSIGHTS</div></div>
+
+    <div class="col-7"><div class="research2"> Research and comparisons between the variety of companies</mark> that offer similar services as Airbnb Experience were executed along with a couple <mark class="quote08">surveys with about 10 college students and 10 adults</mark> all of which who have used and/or were curious of using the platform for their own personal needs.</div></div></div>
+  </div>
+  <div class="container">
+    <div class="row">
+    <div class="col-4"></div>
+    <div class="col-4"><div class="insight"> These were the insights and reoccurring themes recognized through the
+interviews and research:</div></div></div></div>
+
+<div class="container">
+  <div class="row justify-content-end">
+    <div class="col-4"><div class="k1">Unintuitive and Inconvenient Navigation</div></div>
+    <div class="col-4"> <div class="k2">Lack of Incorporation for the Disabled Population</div></div>
+</div></div>
+
+<div class="container">
+  <div class="row justify-content-end">
+    <div class="col-4"><div class="k3">	Some of the <mark class="quote08">platforms</mark> across Airbnb can be <mark class="quote08">challenging to find.</mark> To cross over some platforms (Airbnb Homes, Experiences, Restaurants), you must click on the search bar in order to see the different services. However, this can be confusing for users to
+
+    	find as it is <mark class="quote08">not the most straightforward, intuitive, or convenient.</mark> In addition to the cross-platforms, the surveyed users stated that they <mark class="quote08">wish the categories were displayed</mark> all at the beginning in the <mark class="quote08">same screen</mark> when they first enter the site for convenience, so they can immediately start filtering.
+</div></div>
+    <div class="col-4"> <div class="k4">	The activities and categories offered by Airbnb Experience <mark class="quote08">secludes some of the needs of the disabled people population</mark> of which is a huge target audience. Some of those folks may want to discover activities that they are able to try out
+
+     without any inconvenience of endangerment to themselves.
+
+    	<br><br>For example, some may want to partake in classes or workshops that have extra accommodations to
+
+    	aid them in the process.
+</div></div>
+</div></div>
 
 
-	<div class="insight"><br><br>These were the insights and reoccurring themes recognized through the<br> interviews and research:</div>
-	<div class"space3"> <br><br><br></div>
-	<div class="research1"> Unintuitive and Inconvenient Navigation<br></div>
-	<div class="research1text">
-	Some of the <mark class="quote08">platforms</mark> across Airbnb can be <mark class="quote08">challenging to find.</mark> To cross over some platforms (Airbnb Homes, Experiences, Restaurants), you must click on the search bar in order to see the different services. However, this can be confusing for users to
-	find as it is <mark class="quote08">not the most straightforward, intuitive, or convenient.</mark> In addition to the cross-platforms, the surveyed users stated that they <mark class="quote08">wish the categories were displayed</mark> all at the beginning in the <mark class="quote08">same screen</mark> when they first enter the site for convenience, so they can immediately start filtering.
-	</div>
+<div class="container">
+  <div class="row justify-content-end">
+    <div class="col-4"><div class="k5">Confusing Subcategories</div></div>
+    <div class="col-4"> <div class="k6">Few Filtering Options </div></div>
+</div></div>
 
-	<div class="research2"> Confusing Subcategories<br></div>
-	<div class="research2text">The <mark class="quote08">arbitrary subcategories</mark> are too <mark class="quote08">broad</mark> and should be taken care with the general categories alone.  They can be mistaken as a new set of categories.</div>
+<div class="container">
+  <div class="row justify-content-end">
+    <div class="col-4"><div class="k7">The <mark class="quote08">arbitrary subcategories</mark> are too <mark class="quote08">broad</mark> and should be taken care with the general categories alone.  They can be mistaken as a new set of categories.</div></div>
 
+    <div class="col-4"> <div class="k8">The <mark class="quote08">options for filtering</mark> are very <mark class="quote08">limited</mark> and can be expanded to suit more of the user’s needs and interests when exploring for a new activity.</div></div>
 
-	<div class="research3"> Lack of Incorporation for the Disabled Population<br></div>
-	<div class="research3text">
-	The activities and categories offered by Airbnb Experience <mark class="quote08">secludes some of the needs of the disabled people population</mark> of which is a huge target audience. Some of those folks may want to discover activities that they are able to try out
- without any inconvenience of endangerment to themselves.
-	<br><br>For example, some may want to partake in classes or workshops that have extra accommodations to
-	aid them in the process.
-	</div>
-<!--The Homes platform offers accommodations via
- different accessibilities in the house, but the Experience page does not, but should enable this inclusiveness onto this platform as well.-->
-
-	<div class="research4"> Few Filtering Options <br></div>
-	<div class="research4text">The <mark class="quote08">options for filtering</mark> are very <mark class="quote08">limited</mark> and can be expanded to suit more of the user’s needs and interests when exploring for a new activity.</div>
-
-	<div class="essence"> Essence of the Product </div>
-	<div class="essencetext">
-	So earlier in the opening paragraph and problem, we talked about what the product was and the service/features that were offered in the platform.
-
-	<br><br>However, let’s take a look further on what more there is to uncover in this service.
-
-	<mark class="quote09">
-	<br><br>The product sells more than just a platform that features activities and new hobbies.
-	It tells a story from the host. It gives the user a sneak peek of the hosts’ world, perspectives, and so much more.  These are unique activities planned, thought out, and executed by the host. The host takes the user through a dive into his or her own world and shares with them special knowledge, unique skills, and inside access to local places and communities that the users can’t find on their own. These one-of-a-kind experiences creates lasting connections and cherished memories.
+</div></div>
 
 
-	<br><br>And let’s not forget that you support your local and small businesses!</mark></div>
+<div class="container">
+  <div class="row">
+  <div class="col-4"><div class="essence"> ESSENCE OF THE PRODUCT</div></div>
 
-	<div class="space9"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></div>
+  <div class="col-7"><div class="essence2"> 	So earlier in the opening paragraph and problem, we talked about what the product was and the service/features that were offered in the platform.
 
-	<div class="goals"> Goals & Objectives </div>
-	<div class="allgoals">
-		<ol>
-		  <li>Intuitive Navigation</li><br>
-				<div class="obj1">
-					<ol class="b"><mark class="objtext">
-					  <li>Flow of <mark class="quote08">ease in navigation</mark> through site. <mark class="quote08">Relevant</mark> and main features should be a click away at the home page for user.</li><br>
-						<li><mark class="quote08">Increase user’s control and number of options</mark>, not for abundance, but rather relevant and specific <mark class="quote08">filters for more ideal activities</mark> and outcomes for user.</li><br>
-					</mark></ol>
-				</div>
-		  <li>More Personal Digital Interaction</li><br>
-				<div class="obj2">
-					<ol class="c"><mark class="objtext">
-					  <li>Incorporate features that bring more interaction and <mark class="quote08">daily use</mark> in the form of a tool.</li><br>
-					</mark></ol>
-				</div>
-		  <li>Expand User Audience and Inclusiveness </li><br>
-			<div class="obj3">
-				<ol class="d"><mark class="objtext">
-					<li>Include <mark class="quote08">more activities</mark> that suit the needs of the disabled and <mark class="quote08">features that aid the process</mark> for disabled people utilizing the platform.</li><br>
-				</mark></ol>
-			</div>
-			<li>Refine Current Features and Aesthetics</li><br>
-			<div class="obj4">
-				<ol class="e"><mark class="objtext">
-					<li><mark class="quote08">Improve the current features and aesthetics</mark> to bring a more refreshed and modern design trends to the site that is user-friendly and straightforward.</li><br>
-				</mark></ol>
-			</div>
-		</ol>
-	</div>
-	<div class="designimp"> Design Implications </div>
-	<div class="designimpt">
-		So, now that the goals and objectives are laid out to address each problem, let’s move on to what features and improvements are to be made that will accomplish these goals and objectives.
+  	<br><br>However, let’s take a look further on what more there is to uncover in this service.
+
+  	<mark class="quote09">
+
+
+  	<br><br><blockquote>"The product sells more than just a platform that features activities and new hobbies.
+  	It tells a story from the host. It gives the user a sneak peek of the hosts’ world, perspectives, and so much more.  These are unique activities planned, thought out, and executed by the host. The host takes the user through a dive into his or her own world and shares with them special knowledge, unique skills, and inside access to local places and communities that the users can’t find on their own. These one-of-a-kind experiences creates lasting connections and cherished memories.
+
+
+  	<br><br>And let’s not forget that you support your local and small businesses!"</blockquote></div>
+</div></div></div>
+
+
+<div class="container">
+  <div class="row">
+  <div class="col-4"><div class="goals"> GOALS/OBJECTIVES</div></div>
+
+  <div class="col-7"><div class="obj1">1. Intuitive Navigation</div></div></div></div>
+
+  <div class="container">
+    <div class="row">
+    <div class="col-4"></div>
+  <div class="col-7"><div class="obj2">A. Flow of <mark class="quote08">ease in navigation</mark> through site. <mark class="quote08">Relevant</mark> and main features should be a click away at the home page for user.
+
+  <mark class="quote08">Increase user’s control and number of options</mark>, not for abundance, but rather relevant and specific <mark class="quote08">filters for more ideal activities</mark> and outcomes for user.
+</div></div></div></div>
+
+
+  <div class="container">
+    <div class="row">
+    <div class="col-4"></div>
+
+    <div class="col-7"><div class="obj3">B. Increase user’s control and number of options, not for abundance, but rather relevant and specific filters for more ideal activities and outcomes for user.</div></div>
+</div></div></div></div>
+
+
+<div class="container">
+  <div class="row">
+  <div class="col-4"></div>
+
+  <div class="col-7"><div class="obj4">2. More Personal Digital Interaction</div></div></div></div>
+
+  <div class="container">
+    <div class="row">
+    <div class="col-4"></div>
+  <div class="col-7"><div class="obj5">A. Incorporate features that bring more interaction and daily use in the form of a tool.
+</div></div></div></div>
+
+
+<div class="container">
+  <div class="row">
+  <div class="col-4"></div>
+
+  <div class="col-7"><div class="obj6">3. Expand User Audience and Inclusiveness</div></div></div></div>
+
+  <div class="container">
+    <div class="row">
+    <div class="col-4"></div>
+  <div class="col-7"><div class="obj7">A. Include more activities that suit the needs of the disabled and features that aid the process for disabled people utilizing the platform.
+
+</div></div></div></div>
+
+
+
+<div class="container">
+  <div class="row">
+  <div class="col-4"></div>
+
+  <div class="col-7"><div class="obj8">4. Refine Current Features and Aesthetics</div></div></div></div>
+
+  <div class="container">
+    <div class="row">
+    <div class="col-4"></div>
+  <div class="col-7"><div class="obj9">A. Improve the current features and aesthetics to bring a more refreshed and modern design trends to the site that is user-friendly and straightforward.
+
+</div></div></div></div>
+
+
+
+<div class="container">
+  <div class="row">
+  <div class="col-4"><div class="imp">DESIGN IMPLICATIONS</div></div>
+
+  <div class="col-7"><div class="impp">So, now that the goals and objectives are laid out to address each problem, let’s move on to what features and improvements are to be made that will accomplish these goals and objectives.
 <br><br>
 Goal 1 is “Intuitive Navigation.” To address the first objective of flow of ease in navigation, we want to highlight relevant and essential options that are convenient. What are these options?
 
+<br>
+  <ul class="d1"> <br><li>THE CATEGORIES! Most of the time guests don’t know what exactly they are looking for to try out. To get a sense of what marbles they are dealing with, <mark class="quote08">each category should be displayed in the home screen of the experience page.</mark> When the categories are laid out and apparent, at least one category will pique the interest of the guest.</br><br>
 
-		<ul class="d1"> <li>THE CATEGORIES! Most of the time guests don’t know what exactly they are looking for to try out. To get a sense of what marbles they are dealing with, <mark class="quote08">each category should be displayed in the home screen of the experience page.</mark> When the categories are laid out and apparent, at least one category will pique the interest of the guest.</br><br>
 
+However, there are arbitrary subcategories such as “Animal Encounter,” that will confuse the guest as another category. Prior to this, I decided to <mark class="quote08">take a spin on it by converting them to tags in order for them to easily search those that fall under that tag, but this will also aid the company by allowing them to do customer and data analyses and track customer experience and progress across the different platforms.</mark> By having the data and information, the company can then improve certain features that reflect these results and data for a more optimal user experience.
+</li></ul></div></div></div></div>
 
-  However, there are arbitrary subcategories such as “Animal Encounter,” that will confuse the guest as another category. Prior to this, I decided to <mark class="quote08">take a spin on it by converting them to tags in order for them to easily search those that fall under that tag, but this will also aid the company by allowing them to do customer and data analyses and track customer experience and progress across the different platforms.</mark> By having the data and information, the company can then improve certain features that reflect these results and data for a more optimal user experience.
-	</li></ul>
+<div class="container">
+  <div class="row">
+      <div class="col-4"></div>
+  <div class="col-7"><div class="impp2">
+<ul class="d1"><li> FILTERING! Other important options that should be in the filters include <mark class="quote08">“Distance” and “Duration.”</mark> To be able to see how far and how long the activity takes are important factors that will guests often take into consideration say in a time crunch, spontaneous activity, etc. Group in this case refers to “guest” of the original Airbnb Experience page. I wanted to limit and only add on new filters that would help tailor the ideal Airbnb Experience for the user.
+</li></ul></div></div></div></div>
 
-	<ul class="d1"><li> FILTERING! Other important options that should be in the filters include <mark class="quote08">“Distance” and “Duration.”</mark> To be able to see how far and how long the activity takes are important factors that will guests often take into consideration say in a time crunch, spontaneous activity, etc. Group in this case refers to “guest” of the original Airbnb Experience page. I wanted to limit and only add on new filters that would help tailor the ideal Airbnb Experience for the user.
-	</li></ul>
-Goal 2 is to make a “more personal digital interaction.” This can be approached in many different ways. I decided to create a tool that can be used daily in order to <mark class="quote08">engage the user and take advantage of the current features</mark>, which in this case is the <mark class="quote08">Saved List option.</mark> The saved list is a phenomenal feature that can be put into use more often when there is a planner involved. As many users seek out to explore new activities, they will most often than not have a separate document that takes a <mark class="quote08">list of all these activities</mark> and then <mark class="quote08">inputs them into a calendar</mark> to see which activity best suits their schedule and convenience. Prior to this, it would be more interactive and convenient for the user if there was a planner feature embedded into the platform itself.
-<br><br>
+<div class="container">
+  <div class="row">
+      <div class="col-4"></div>
+<div class="col-7"><div class="impp3">Goal 2 is to make a “more personal digital interaction.” This can be approached in many different ways. I decided to create a tool that can be used daily in order to <mark class="quote08">engage the user and take advantage of the current features</mark>, which in this case is the <mark class="quote08">Saved List option.</mark> The saved list is a phenomenal feature that can be put into use more often when there is a planner involved. As many users seek out to explore new activities, they will most often than not have a separate document that takes a <mark class="quote08">list of all these activities</mark> and then <mark class="quote08">inputs them into a calendar</mark> to see which activity best suits their schedule and convenience. Prior to this, it would be more interactive and convenient for the user if there was a planner feature embedded into the platform itself.
+<br><br></div></div></div></div>
+
+<div class="container">
+  <div class="row">
+      <div class="col-4"></div>
+<div class="col-7"><div class="impp4">
 Goal 3 is to “expand targeted audience and inclusiveness of the disability population.” In order to do this , I focused on 2 main disabilities of which are comprised of the “visually disabled” and “auditory disabled.” For this, the <mark class="quote08">map feature was kept as an “on/off” tool for those who are auditory disabled</mark>, but also incorporated a <mark class="quote08">microphone feature on the search bar for those who are visually disabled.</mark>
-<br><br>
-Goal 4 is to “improve current features and aesthetics” of the site.  Improving not just the flow of navigation, but also so it is user-friendly and straightforward. It <mark class="quote08">should be clear and easy to read for people (with the additions of disability accommodations implemented).</mark> Clean design that is up to date with the current design trends that enhance the user’s experience in navigating through the site.
-	</div>
+<br><br></div></div></div></div>
 
-	<div class="space6"><br><br><br><br></div>
-	<div class="constraints">Constraints</div>
-		<ul class="b"><mark class="objtext">
+<div class="container">
+  <div class="row">
+      <div class="col-4"></div>
+<div class="col-7"><div class="impp5">
+Goal 4 is to “improve current features and aesthetics” of the site.  Improving not just the flow of navigation, but also so it is user-friendly and straightforward. It <mark class="quote08">should be clear and easy to read for people (with the additions of disability accommodations implemented).</mark> Clean design that is up to date with the current design trends that enhance the user’s experience in navigating through the site.
+</div></div></div></div>
+
+
+
+<div class="container">
+  <div class="row">
+  <div class="col-4"><div class="constraints">CONSTRAINTS</div></div>
+
+  <div class="col-7"><div class="constraints2">
+		<ul>
 			<li>Time constraints can be an issue depending on when to deploy the features.</li>
 			<li>To expand into the wishlist and planning tool will take some time to incorporate as well as have for the users to accept.</li></mark>
 		</ul>
-	</div>
-
-	<div class="space7"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></div>
-	<div class="userjourney">User Journey & Storyboarding</div>
-	<div class="userjourneytext"></div>
-	<div class="userjourneypic"><img src="userjourney.png" alt="userjourney" width="450" height="970" class="center"></div>
-	<div class="storyboard"><img src="storyboarding2.JPG" alt="storyboard" width="550" height="350" class="center"></div>
+	</div></div></div></div>
 
 
 
-	<div class="space7"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></div>
-	<div class="midfi">Mid-Fidelity</div>
-	<div class="midfitext">From the challenges that occurred for users,	I redesigned the Airbnb Experience page in order to knock off these goals and problems so that interaction, navigation, and features would improve and become more interpersonal between the user and site.	I kept in mind those that were disabled as I designed the lay out. </div>
+
+  <div class="container">
+    <div class="row">
+    <div class="col-4"><div class="sb">USER BOARD/STORY BOARDING</div></div>
+
+    <div class="col-7"><div class="sb2"> <img src="userjourney.png" alt="sb1"  width="450" height="970"></div></div></div></div>
 
 
-	<div class="homepage"><img src="homepage.png" alt="homepage" width="550" height="350" class="left"></div>
-	<div class="homepgtext">Home Page of Airbnb Experience</div>
+      <div class="container">
+        <div class="row">
+        <div class="col-4"></div>
+        <div class="col-7"><div class="sb3"> <img src="storyboarding2.jpg" alt="sb1"  width="450" height="250"></div></div></div></div>
 
 
-	<div class="artcategory"><img src="artcategory.png" alt="artcategory" width="550" height="350"></div>
-	<div class="arttext">Selected Category (Art) Page</div>
-
-	<div class="limed"><img src="limitededitiontop.png" alt="limed" width="550" height="350" class="right"></div>
-	<div class="limedtext">Limited Edition Top Screen Display</div>
-
-	<div class="limed2"><img src="limitededitionbottom.png" alt="limed" width="550" height="350"></div>
-	<div class="limedtext2">Limited Edition Bottom Screen Display</div>
 
 
-	<div class="space8"><br><br></div>
-	<div class="highfi">High-Fidelity</div>
+          <div class="container">
+            <div class="row">
+            <div class="col-4"><div class="md">MID FIDELITY</div></div>
 
-	<div class="artcategoryh"><img src="artcategoryh.png" alt="artcategoryh" width="550" height="350"></div>
-	<div class="arttexth">Selected Category (Art) Page</div>
-	<div class="arttexth2">
-		<mark class="quote08">Accomplishes goals 1 & 3.</mark> Rather than have arbitrary subheadings that could be confused as a whole other category, tags are used to provide results that the guests may be interested in based on the key words and terms they search for. A right corner box is also used to indicate the time of expiration of these special activities and deals.
-	<br><br>
-	The location and mile distance is also noted at the convenience of the guest as in conjunction with the ratings and reviews. Lastly, there are also the microphone searchbar feature and map on/off feature.</div>
+            <div class="col-7"><div class="md2">From the challenges that occurred for users,	I redesigned the Airbnb Experience page in order to knock off these goals and problems so that interaction, navigation, and features would improve and become more interpersonal between the user and site.	I kept in mind those that were disabled as I designed the lay out.</div></div></div></div>
 
 
-	<div class="homepageh"><img src="homepageh.png" alt="homepageh" width="550" height="350" class="left"></div>
+        <div class="container">
+        <div class="row justify-content-end">
 
-	<div class="homepgtexth">Home Page of Airbnb Experience</div>
-	<div class="homepgexp"><mark class="quote08">Accomplishes goals 1 & 3.</mark> For the front page, the categories are all laid out at the convenience of the guest in order to help them process what options are available to them in the platform.</div>
+            <div class="col-4"><div class="md3"><img src="homepage.png" alt="homepage" width="350" height="200" class="left"></div></div>
 
-	<div class="limedh"><img src="limitededitiontoph.png" alt="limed" width="550" height="350" class="right"></div>
-	<div class="limedtexth">Limited Edition Top Screen Display High Fidelity</div>
+            <div class="col-4"><div class="md4"><img src="artcategory.png" alt="artcategory" width="350" height="200"></div></div></div></div>
 
-	<div class="limed2h"><img src="limitededitionbottomh.png" alt="limed" width="550" height="350"></div>
-	<div class="limedtext2h">Limited Edition Bottom Screen Display High Fidelity</div>
-	<div class="limedtext2hh"><mark class="quote08">Accomplishes goals 3 & 4.</mark> A redesign of the current page for a specific category in order to bring a more modern and fresh twist in the design that allows the user to take their time to “breathe and browse through the headliners (limited edition, local favorites, etc) at ease,” while getting a sneak peak of what the category will offer through a brief paragraph.</div>
+                    <div class="container">
+                    <div class="row justify-content-end">
+  <div class="col-4"><div class="md5">Home Page</div></div>
 
-	<div class="bonus"> Bonus Tool (Planner) </div>
-	<div class="bonustext">
-		<mark class="quote08">Accomplishes goals 2 & 3.</mark>
-		The planner tool works in conjunction with the saved list tool. With this, users can note which dates that they plan to visit these activities, restaurants, and homes. From there, they can set which activities they will participate from their saved items at which designated time. The palette allows the guest to visually see which is an experience, restaurant, or home. Not only that, the palette colors will be adjusted to their liking. Recommendations will be personalized and tailored to their interests based on recent clicks, location, and saved items. They will also have the ability to invite other users to edit the calendar. Once again, the microphone feature is implemented in each redesign page, but the map on/off feature is also available for planning to minimize space or make it convenient for auditory disabled people.
-	</div>
-	<div class="bonuspic"><img src="bonus.png" alt="bonus" width="1100" height="350"></div>
-	<div class="reflections"> Reflections </div>
-	<div class="reflectparagraph"> I specifically chose this product due to the unique product and service it sells to its guests. The side project was fulfilling knowing that this new redesign would help improve the process for both sides, the hosts and guests.
-<br><br>
-Understanding what I was trying to sell was an important key and reminder as I curated my designs as that was to sell and share the hosts’ beautiful world and unique activities. Prior to this reminder, I was focused on also trying to have the new redesign emanate a comfortable and welcoming environment for both sides (guests and hosts).
-<br><br>
-It challenged myself to also improve any features that were available, but not utilized as often, which prompted me to create a new tool (planner) in order to not only knock this goal off, as well as engage more user interaction with the platform. It was a fun process in creating a new site with the new tool that was still in touch with the original theme of the site.
-<br><br>
-As I was designing, I kept finding more ways to improve and iterate as I went. Not only on my own features, but I also started noticing more discrete details of the site that could be improved, however, all this iteration was relevant and only for the better.
-<br><br>
-To learn how to create a design that bridges the user to the host and user/host to the platform immensely taught me how to put myself in the shoes of each role (guest, host, business).
-<br>
-Overall, a fun, impact, and fulfilling project! I definitely learned a ton as this was my first official, lengthy redesign. Now, onwards to more design projects and challenges!
+<div class="col-4"><div class="md6">Art Category Page</div></div></div></div>
+
+
+                    <div class="container">
+                    <div class="row justify-content-end">
+
+                        <div class="col-4"><div class="md7"><img src="limitededitiontop.png" alt="homepage" width="350" height="200" class="left"></div></div>
+
+                        <div class="col-4"><div class="md8"><img src="limitededitionbottom.png" alt="artcategory" width="350" height="200"></div></div></div></div>
+
+
+
+                                            <div class="container">
+                                            <div class="row justify-content-end">
+                          <div class="col-4"><div class="md5">Limited Edition Top Page</div></div>
+
+                        <div class="col-4"><div class="md6">Limited Edition Bottom Page</div></div></div></div>
+
+
+
+
+                          <div class="container">
+                            <div class="row justify-content-start">
+                            <div class="col-4"><div class="hf">HIGH FIDELITY</div></div>
+                          </div></div>
+
+                                                    <div class="container">
+                                                      <div class="row justify-content-start">
+                                                        <div class="col-3"><div class="hf1"><mark class="sm">Home Page</mark><br>Accomplishes goals 1 & 3.</mark> For the front page, the categories are all laid out at the convenience of the guest in order to help them process what options are available to them in the platform.</div></div>
+
+                            <div class="col-5"><div class="hf2"><img src="homepageh.png" alt="homepageh" width="550" height="350"></div></div></div></div>
+
+
+                                                                                <div class="container">
+                                                                                  <div class="row justify-content-start">
+                                                                                    <div class="col-3"><div class="hf3"><mark class="sm">Selected Category (Art) Page</mark><br>Accomplishes goals 1 & 3. Rather than have arbitrary subheadings that could be confused as a whole other category, tags are used to provide results that the guests may be interested in based on the key words and terms they search for. A right corner box is also used to indicate the time of expiration of these special activities and deals.
+
+The location and mile distance is also noted at the convenience of the guest as in conjunction with the ratings and reviews. Lastly, there are also the microphone searchbar feature and map on/off feature.</div></div>
+
+                                                        <div class="col-5"><div class="hf4"><img src="artcategoryh.png" alt="homepageh" width="550" height="350"></div></div></div></div>
+
+
+
+                                                                                                            <div class="container">
+                                                                                                              <div class="row justify-content-start">
+                                                                                                                <div class="col-3"><div class="hf5"><mark class="sm">Limited Edition Bottom Screen Display High Fidelity</mark><br>Accomplishes goals 3 & 4.</mark> A redesign of the current page for a specific category in order to bring a more modern and fresh twist in the design that allows the user to take their time to “breathe and browse through the headliners (limited edition, local favorites, etc) at ease,” while getting a sneak peak of what the category will offer through a brief paragraph.</div>
 </div>
--->
 
+                                                                                    <div class="col-5"><div class="hf6"><img src="limitededitionbottomh.png" alt="homepageh" width="550" height="350"></div></div></div></div>
+
+
+
+
+                                                                                                                                                                                                <div class="container">
+                                                                                                                                                                                                  <div class="row justify-content-start">
+                                                                                                                                                                                                    <div class="col-3"></div>
+                                                                                                                                                                        <div class="col-5"><div class="hf8"><img src="limitededitiontoph.png" alt="homepageh" width="550" height="350"></div></div></div></div>
+
+
+                                                                                                                                                                                                                                                                                    <div class="container">
+                                                                                                                                                                                                                                                                                      <div class="row justify-content-start">
+                                                                                                                                                                                                                                                                                        <div class="col-3"><div class="hf9"><mark class="sm">Bonus Planner Tool</mark><br>Accomplishes goals 2 & 3.
+                                                                                                                                                                                                                                                                                        		The planner tool works in conjunction with the saved list tool. With this, users can note which dates that they plan to visit these activities, restaurants, and homes. From there, they can set which activities they will participate from their saved items at which designated time. The palette allows the guest to visually see which is an experience, restaurant, or home. Not only that, the palette colors will be adjusted to their liking. Recommendations will be personalized and tailored to their interests based on recent clicks, location, and saved items. They will also have the ability to invite other users to edit the calendar. Once again, the microphone feature is implemented in each redesign page, but the map on/off feature is also available for planning to minimize space or make it convenient for auditory disabled people.
+                                                                                                                                                                                                                                                                                        	</div></div>
+
+                                                                                                                                                                                                                                                            <div class="col-5"><div class="hf10"><img src="bonus.png" alt="homepageh" width="800" height="240"></div></div></div></div>
+
+
+
+                                                                                                                                                                                                                                                            <div class="container">
+                                                                                                                                                                                                                                                              <div class="row justify-content-start">
+                                                                                                                                                                                                                                                              <div class="col-4"><div class="rf">REFLECTIONS & FUTURE CONSIDERATIONS</div></div>
+                                                                                                                                                                                                                                                              <div class="col-7"><div class="rf2">I specifically chose this product due to the unique product and service it sells to its guests. The side project was fulfilling knowing that this new redesign would help improve the process for both sides, the hosts and guests.
+                                                                                                                                                                                                                                                            <br><br>
+                                                                                                                                                                                                                                                            Understanding what I was trying to sell was an important key and reminder as I curated my designs as that was to sell and share the hosts’ beautiful world and unique activities. Prior to this reminder, I was focused on also trying to have the new redesign emanate a comfortable and welcoming environment for both sides (guests and hosts).
+                                                                                                                                                                                                                                                            <br><br>
+                                                                                                                                                                                                                                                            It challenged myself to also improve any features that were available, but not utilized as often, which prompted me to create a new tool (planner) in order to not only knock this goal off, as well as engage more user interaction with the platform. It was a fun process in creating a new site with the new tool that was still in touch with the original theme of the site.
+                                                                                                                                                                                                                                                            <br><br>
+                                                                                                                                                                                                                                                            As I was designing, I kept finding more ways to improve and iterate as I went. Not only on my own features, but I also started noticing more discrete details of the site that could be improved, however, all this iteration was relevant and only for the better.
+                                                                                                                                                                                                                                                            <br><br>
+                                                                                                                                                                                                                                                            To learn how to create a design that bridges the user to the host and user/host to the platform immensely taught me how to put myself in the shoes of each role (guest, host, business).
+                                                                                                                                                                                                                                                            <br>
+                                                                                                                                                                                                                                                            Overall, a fun, impact, and fulfilling project! I definitely learned a ton as this was my first official, lengthy redesign. Now, onwards to more design projects and challenges!
+                                                                                                                                                                                                                                                            </div></div>
+                                                                                                                                                                                                                                                            </div></div>
 </body>
 </html>
