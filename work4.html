@@ -1,154 +1,341 @@
-<!doctype html>
-<html>
+
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Portfolio Home</title>
-<link href="work4.css" rel="stylesheet" type="text/css">
-<link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:800|Rubik" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Muli|Roboto+Mono" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Muli:400,700,800" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Cantarell" rel="stylesheet">
-<link rel='shortcut icon' type='image/x-icon' href='fai.ico' />
+  <title>Portfolio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="work4.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
+
+  <script>
+  // When the user clicks on div, open the popup
+  function myFunction() {
+    var popup = document.getElementById("myPopup");
+    popup.classList.toggle("show");
+  }
+  </script>
+
+
 </head>
 <body>
-<div class="initials">	<a href="Portfolio.html" class="initials"> TP. </a></div>
-	<div class= "menuclass">
-		<div id="menu">
-			<ul>
-				<li><a href="Portfolio.html">Works</a></li>
-				<li><a href="about.html">About</a></li>
-				<li><a href="misc.html">Projects</a></li>
-			</ul>
+
+<script>$(function(){  // $(document).ready shorthand
+  $('.monster').fadeIn('slow');
+});
+
+$(document).ready(function() {
+
+    /* Every time the window is scrolled ... */
+    $(window).scroll( function(){
+
+        /* Check the location of each desired element */
+        $('.container').each( function(i){
+
+            var bottom_of_object = $(this).position().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+            /* If the object is completely visible in the window, fade it it */
+            if( bottom_of_window > bottom_of_object ){
+
+                $(this).animate({'opacity':'1'},1500);
+
+            }
+
+        });
+        $('.col-4').each( function(i){
+
+            var bottom_of_object = $(this).position().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+            /* If the object is completely visible in the window, fade it it */
+            if( bottom_of_window > bottom_of_object ){
+
+                $(this).animate({'opacity':'1'},1500);
+
+            }
+
+        });
+
+    });
+
+});</script>
+
+
+  <div class="header">
+
+    <div class="progress-container">
+      <div class="progress-bar" id="myBar"></div>
+    </div>
+  </div>
+
+
+
+
+	<div class="jumbotron text-left" style="background:transparent !important" class="jumbotron">
+	  <div class="initials"><a href="Works.html" class="initials"> TP. </a></div>
 	</div>
+	<nav class="navbar navbar-expand-lg navbar-light ">
+
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+	  </button>
+	  <div class="collapse navbar-collapse" id="navbarNav">
+	    <ul class="navbar-nav ml-auto">
+	      <li class="nav-item active">
+	        <a class="nav-link" href="#">Works <span class="sr-only">(current)</span></a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#">About</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#">Misc</a>
+	      </li>
+
+	    </ul>
+	  </div>
+	</nav>
+
+
+
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-4">
+        <div id= "airbnbleftrec"></div>
+
+      </div>
+      <div class="col-4">
+        <div id="airbnbrightrec"></div>
+
+      </div></div>
+
+      <div class="row">
+      <div class="col"><div class="airbnbimage1intro">Kiva Web Redesign Tutorial
 </div>
-<!--
-<div class="kivaimage1"> <img src="kivaimage1persp.png" alt="Kivaintro" width="700" height="500">
-<div class="kivaimage1intro">Kiva Web Redesign</div>
-	<div class="kivabigrec">
-		<div id= "kivaleftrec"></div>
-		<div id="kivarightrec"></div> </div>
-<div class="kivadate"> May 2017 - August 2018 </div>
-<div class="kivaparagraph"> <mark class="quote0"> Envision a world where all people hold the power to <br> create opportunity for themselves and others.</br> <br> </mark> Kiva is a donating web platform that enables local banks and donors <br> to support local businesses by lending out finances or loans. With <br> family members with small businesses, the mission of this nonprofit <br> strongly resonates with me as I believe they encourage more <br> participation and support towards local businesses. </br> <br> <mark class="quote1">"As they said, dreams are universal, but opportunity could be <br> hard to come by." </mark> </div>
--->
-<div class="head">
-	<div class="kivaimage1intro">Kiva Web Redesign Tutorial</div>
-		<div class="kivabigrec">
-			<div id= "kivaleftrec"></div>
-			<div id="kivarightrec"></div> </div>
-			<div class="kivaimage1persp"> <img src="kivaimage1persp.png" alt="kivaintro" width="500" height="350"></div></div>
-<div class="kivadate"> May 2018 - August 2018 </div>
-<div class="kivaparagraph"> <mark class="quote0">Envision a world where all people hold the power to <br> create opportunity for themselves and others.</br> <br> </mark> Kiva is a donating web platform that enables local banks and donors <br> to support local businesses by lending out finances or loans. With <br> family members with small businesses, the mission of this nonprofit <br> strongly resonates with me as I believe they encourage more <br> participation and support towards local businesses. </br> <br>
-				<mark class="quote1">"As they said, dreams are universal, but opportunity could be <br> hard to come by." </mark><br
-				><br><br><br> </div>
+      </div></div>
+    </div>
 
-	<!--
-	<div class="vid"><iframe width="460" height="315" src="https://www.youtube.com/embed/nj0TqXeXQGo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-	<div class="vidpara"> The video above showcases the various group members in my project team for Virtual Reality's Fall 2018 Immersive Reality Project. <br>Skip to 0:36 to see our project in action.
-	<br><br>
-	<mark class="bold">Videography & Editing: Teresa Pho</mark>
-</div>-->
-
-	<div class="role">
-	<mark class="bold0">Role</mark><br><br>
-
-	UI/UX Designer <br>
-	Videographer & Video Editor <br><br><br>
-	<mark class="bold0">Audience</mark><br>
-	<br>New & inexperienced users of human-<br>centered design <br> Any curious and passionate mind</div><br><br>
-
-	<div class="tools">	<mark class="bold0">Tools</mark></div>
-	<div class="toolspara">
-		Adobe XD <br>
-		Adobe After Effects <br>
-		Adobe Premeire Pro <br><br>
+    <div class="container">
+  <div class="row justify-content-around">
+    <div class="col-3"><div class="airbnbdate">May 2018 - August 2018  </div>
 </div>
-
-<div class="disc">	<mark class="bold0">Disclaimer</mark></div>
-<div class="discpara">
-Before starting through this tutorial, I just wanted to clarify and note that I am by no means a professional. However, I more than happy to share my design process! Each person has their own design process and I believe anyone can learn new approaches and perspectives from this as well.
+    <div class="col-4">		<div class="airbnbimage1"> <img src="kivaimage1persp.png" alt="vrbintro" width="500" height="350">
 </div>
+    </div></div>
 
+  <div class="row justify-content-start">
+    <div class="col-6"><div class="airbnbparagraph"><mark class="quote0">Envision a world where all people hold the power to
+create opportunity for themselves and others.
+ <br></mark>
+  Kiva is a donating web platform that enables local banks and donors <br> to support local businesses by lending out finances or loans. With <br> family members with small businesses, the mission of this nonprofit <br> strongly resonates with me as I believe they encourage more <br> participation and support towards local businesses. </br> <br>
 
-<div class="kiva1"> <img src="kiva1.jpg" alt="kiva1" width="400" height="250"></div></div>
-
-<div class="kiva3"> <img src="kiva3.jpg" alt="kiva2" width="400" height="250"></div></div>
-
-
-
-<div class="kiva4"> <img src="kiva4.jpg" alt="kiva3" width="400" height="250"></div></div>
-
-
-<div class="kiva5"> <img src="kiva5.jpg" alt="kiva5" width="400" height="250"></div></div>
-
-
-
-<div class="kiva6"> <img src="kiva6.jpg" alt="kiva6" width="400" height="250"></div></div>
-
-
-
-
-<div class="kiva7"> <img src="kiva7.jpg" alt="kiva7" width="400" height="250"></div></div>
-
-
-<div class="kiva8"> <img src="kiva8.jpg" alt="kiva8" width="400" height="250"></div></div>
-
-
-
-<div class="kiva9"> <img src="kiva9.jpg" alt="kiva9" width="400" height="250"></div></div>
-
-
-
-<div class="kiva10"> <img src="kiva10.jpg" alt="kiva10" width="400" height="250"></div></div>
-
-
-
-<div class="kiva11"> <img src="kiva11.jpg" alt="kiva11" width="400" height="250"></div></div>
-
-
-
-<div class="kiva12"> <img src="kiva12.jpg" alt="kiva12" width="400" height="250"></div></div>
-
-
-<div class="kiva13"> <img src="kivamid.png" alt="kiva11" width="300" height="500"></div></div>
-
-
-
-<div class="kiva14"> <img src="kivaimage1.png" alt="kiva12" width="300" height="500"></div></div>
-<!--
-<div class="prob"> The Problem </div>
-<div class="probpara"> The site can be difficult to navigate as all the information is displayed in the "About" page and the aesthetics of the site are quite chunky and does not exude the right ambiance for a site with its mission. </div>
-<div class="probgif"><img src="kivaproblems.gif" loop="infinite" width="400" height="250"/></div>
-
-
-<div class="quest">The Question</div>
-<div class="questpara">How might we redesign a website for a non-profit that serves its purpose of garnering attention towards its purpose and encouraging people to become donors?</div>
-
-
-<div class="goals">Goals</div>
-<div class="goalspara">1. Reorganization of the tools for better display of information and tools.<br>
-		2. Update the site with modern design trends and aesthetics </div>
-
-
-<div class="research">User Research </div>
-<div class="analatitlepara">Analogous Inspiration & Market Comparisons</div>
-<div class="analapara">
-	<mark class="bold2"><br>ALS Challenge</mark><br><br>
-	With an overwhelming amount of positive feedback in donations, we specifically looked at the ALS challenge to understand the motivations that brought people to participate in the challenge and even donate. We can see from this that there was a huge and prevalent participation in the challenge from not only public figures, but also the peers themselves. The public figures and organization both benefited mutually as this is noted to be positive feedback and public relations. The public display from these influencers increased participation as it was all put on social media, which drove the huge numbers of donators and participators.<br>
-
+      	<mark class="quote1">"As they said, dreams are universal, but opportunity could be <br> hard to come by."  </mark><br><br><br><br> </div>
+</div>
+    </div>
 </div>
 
-<div class="analapara2">
-	<mark class="bold2"><br>Kickstarter</mark><br><br>
-		In terms of website redesigns, I turned to Kickstarter to understand the layout and attractions of the website to garner donors towards their products. Organization to popular links such as "featured projects" or "noteworthy projects" are convenient for those donors who want to donate but are in a rush to explore. They also incorporated what they call "collections" aka subheadings.<br>
-	<mark class="bold2"><br>Everlane</mark><br><br>
-Everlane serves to advertise and get their message across well. For this clothing brand, what sets them apart is their strong mission for ethical factories and high-quality clothing. Their "Radically Transparent" motto and mission is made known to the public, so this clear communication and goal of the company allows customers to understand what they are exactly investing in. <br>
-</div>
 
-<div class="analapara3">
-	<mark class="bold2"><br>Amnesty Internation</mark><br><br>
-	Understanding how Amnesty's International campaign is successful and how they got global attention is important as the uadience level for Kiva expands to the international level as well. They garnered donors through various techniques such as advertisements, documentaries, etc. <br>
-</div>
--->
-</body>
-</html>
+
+<div class="container">
+  <div class="row justify-content-start">
+    <div class="col-4"><div class="subhead">ROLE</div></div>
+    <div class="col-4"><div class="subhead2">DISCLAIMER</div></div>
+    </div> </div>
+
+
+    <div class="container">
+      <div class="row justify-content-start">
+        <div class="col-4"><div class="subhead55"> UI/UX Designer<br>
+Videographer & Video Editor </div></div>
+        <div class="col-7"><div class="subhead4">Before starting through this tutorial, I just wanted to clarify and note that I am by no means a professional. However, I more than happy to share my design process! Each person has their own design process and I believe anyone can learn new approaches and perspectives from this as well.
+</div></div>
+        </div></div>
+
+        <div class="container">
+          <div class="row justify-content-start">
+            <div class="col-4"><div class="subhead">AUDIENCE</div></div>
+            <div class="col-4"><div class="subhead2">TOOLS</div></div>
+            </div> </div>
+
+            <div class="container">
+              <div class="row justify-content-start">
+                <div class="col-4"><div class="subhead55"> UI/UX Designer<br>
+        Videographer & Video Editor </div></div>
+                <div class="col-7"><div class="subhead4"> Adobe XD <br>
+Adobe After Effects <br>
+Adobe Premeire Pro<br><br><br>
+        </div></div></div></div>
+
+
+
+              <div class="container">
+                <div class="row">
+                <div class="col-4"><div class="question">PALETTE & FONT</div></div>
+
+                <div class="col-2">
+                <div class="kiva1"> <img src="kiva1.jpg" alt="kiva1" width="400" height="250"></img><br><br><br></div></div></div>
+                </div>
+
+
+
+
+                              <div class="container">
+                                <div class="row">
+                                <div class="col-4"><div class="question">TUTORIAL</div></div>
+
+                                <div class="col-2">
+
+                                <div class="kiva3"> <img src="kiva3.jpg" alt="kiva2" width="400" height="250"></img></div></div>
+</div></div>
+
+
+
+
+<div class="container">
+<div class="row">
+<div class="col-4"></div>
+
+<div class="col-2">
+
+
+<div class="kiva4"><br><img src="kiva4.jpg" alt="kiva3" width="400" height="250"></img></div></div></div></div>
+
+
+
+
+<div class="container">
+<div class="row">
+<div class="col-4"></div>
+
+<div class="col-2">
+
+
+
+
+<div class="kiva5"><br> <img src="kiva5.jpg" alt="kiva5" width="400" height="250"></img></div></div></div></div>
+
+<div class="container">
+<div class="row">
+<div class="col-4"></div>
+
+<div class="col-2">
+
+<div class="kiva6"> <br><img src="kiva6.jpg" alt="kiva6" width="400" height="250"></img></div></div></div></div>
+
+
+
+<div class="container">
+<div class="row">
+<div class="col-4"></div>
+
+<div class="col-2">
+
+
+<div class="kiva7"><br> <img src="kiva7.jpg" alt="kiva7" width="400" height="250"></img></div></div></div></div>
+
+
+
+
+<div class="container">
+<div class="row">
+<div class="col-4"></div>
+
+<div class="col-2">
+
+
+<div class="kiva8"> <img src="kiva8.jpg" alt="kiva8" width="400" height="250"></img></div></div></div></div>
+
+
+
+<div class="container">
+<div class="row">
+<div class="col-4"></div>
+
+<div class="col-2">
+
+
+
+
+<div class="kiva9"> <img src="kiva9.jpg" alt="kiva9" width="400" height="250">
+
+</img></div></div></div></div>
+
+
+
+
+
+<div class="container">
+<div class="row">
+<div class="col-4"></div>
+
+<div class="col-2">
+
+
+
+<div class="kiva10"> <img src="kiva10.jpg" alt="kiva10" width="400" height="250">
+
+
+
+</img></div></div></div></div>
+
+
+
+<div class="container">
+<div class="row">
+<div class="col-4"></div>
+
+<div class="col-2">
+
+
+
+<div class="kiva11"> <img src="kiva11.jpg" alt="kiva11" width="400" height="250">
+
+
+
+
+</img></div></div></div></div>
+
+
+<div class="container">
+<div class="row">
+<div class="col-4"></div>
+
+<div class="col-2">
+
+
+
+<div class="kiva12"> <img src="kiva12.jpg" alt="kiva12" width="400" height="250">
+
+
+
+</img></div></div></div></div>
+
+
+
+              <div class="container">
+                <div class="row">
+                <div class="col-4"><div class="question">MID FIDELITY</div></div>
+
+                <div class="col-2">
+
+
+                  <div class="kiva13"> <br><br><br><img src="kivamid.png" alt="kiva11" width="300" height="500"></img><br><br><br></div></div></div>
+                </div>
+
+
+                              <div class="container">
+                                <div class="row">
+                                <div class="col-4"><div class="question">HIGH FIDELITY</div></div>
+
+                                <div class="col-2">
+
+
+
+
+                                  <div class="kiva14"> <br><br><br><img src="kivaimage1.png" alt="kiva12" width="300" height="500"></img><br><br><br></div></div></div>
+                                </div>
