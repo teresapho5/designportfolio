@@ -1,109 +1,282 @@
-<!doctype html>
-<html>
+
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Portfolio Home</title>
-<link href="work3.css" rel="stylesheet" type="text/css">
-<link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:800|Rubik" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Muli|Roboto+Mono" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Muli:400,700,800" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Cantarell" rel="stylesheet">
-<link rel='shortcut icon' type='image/x-icon' href='fai.ico' />
+  <title>Portfolio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="work3.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
+
+  <script>
+  // When the user clicks on div, open the popup
+  function myFunction() {
+    var popup = document.getElementById("myPopup");
+    popup.classList.toggle("show");
+  }
+  </script>
+
+
 </head>
 <body>
-<div class="initials">	<a href="Portfolio.html" class="initials"> TP. </a></div>
-	<div class= "menuclass">
-		<div id="menu">
-			<ul>
-				<li><a href="Portfolio.html">Works</a></li>
-				<li><a href="about.html">About</a></li>
-				<li><a href="misc.html">Misc</a></li>
-			</ul>
+
+<script>$(function(){  // $(document).ready shorthand
+  $('.monster').fadeIn('slow');
+});
+
+$(document).ready(function() {
+
+    /* Every time the window is scrolled ... */
+    $(window).scroll( function(){
+
+        /* Check the location of each desired element */
+        $('.container').each( function(i){
+
+            var bottom_of_object = $(this).position().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+            /* If the object is completely visible in the window, fade it it */
+            if( bottom_of_window > bottom_of_object ){
+
+                $(this).animate({'opacity':'1'},1500);
+
+            }
+
+        });
+        $('.col-4').each( function(i){
+
+            var bottom_of_object = $(this).position().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+            /* If the object is completely visible in the window, fade it it */
+            if( bottom_of_window > bottom_of_object ){
+
+                $(this).animate({'opacity':'1'},1500);
+
+            }
+
+        });
+
+    });
+
+});</script>
+
+
+  <div class="header">
+
+    <div class="progress-container">
+      <div class="progress-bar" id="myBar"></div>
+    </div>
+  </div>
+
+
+
+
+	<div class="jumbotron text-left" style="background:transparent !important" class="jumbotron">
+	  <div class="initials"><a href="Works.html" class="initials"> TP. </a></div>
 	</div>
+	<nav class="navbar navbar-expand-lg navbar-light ">
+
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+	  </button>
+	  <div class="collapse navbar-collapse" id="navbarNav">
+	    <ul class="navbar-nav ml-auto">
+	      <li class="nav-item active">
+	        <a class="nav-link" href="#">Works <span class="sr-only">(current)</span></a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#">About</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#">Misc</a>
+	      </li>
+
+	    </ul>
+	  </div>
+	</nav>
+
+
+
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-4">
+        <div id= "airbnbleftrec"></div>
+
+      </div>
+      <div class="col-4">
+        <div id="airbnbrightrec"></div>
+
+      </div></div>
+
+      <div class="row">
+      <div class="col"><div class="airbnbimage1intro">Virtual Reality [Immersive Reality] Project</div>
+      </div></div>
+    </div>
+
+    <div class="container">
+  <div class="row justify-content-around">
+    <div class="col-3"><div class="airbnbdate">August 2018 - December 2018 </div>
 </div>
-<div class="head">
-	<div class="vrimage1intro">Virtual Reality [Immersive Reality] Project</div>
-		<div class="vrbigrec">
-			<div id= "vrleftrec"></div>
-			<div id="vrrightrec"></div> </div>
-			<div class="vrimage1"> <img src="vrmac.png" alt="vrbintro" width="350" height="300"></div></div>
-
-
-<div class="vrdate"> August 2018 - December 2018 </div>
-<div class="vrparagraph"> <mark class="quote0"> Virtual Reality meets Storytelling.</mark> <br> Immersing the user to a whole new digital world.
-  Taking them<br> on a journey back to nostalgia and childhood, that is space and<br> constellations! <br> <br>
-	<mark class="quote1">"Imagination will often carry us to worlds that never were.<br> But without it we go nowhere." </mark><br><br><br><br> </div>
-
-<div class="vid"><iframe width="460" height="315" src="https://www.youtube.com/embed/nj0TqXeXQGo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-<div class="vidpara"> The video above showcases the various group members in my project team for Virtual Reality's Fall 2018 Immersive Reality Project. <br>Skip to 0:36 to see our project in action.
-<br><br>
-<mark class="bold">Videography & Editing: Teresa Pho</mark>
+    <div class="col-4">		<div class="airbnbimage1"> <img src="vrmac.png" alt="vrbintro" width="350" height="300">
 </div>
-<div class="space"><br><br>
-<div class="team">
-<mark class="bold0">Team</mark><br><br>
-<br><mark class="bold1">Project Managers:</mark><br>
-<br>Iris Yon
-<br>Howe Cui
-<br>
-<br><mark class="bold1">Team Members:</mark><br>
-<br>Hoaian Dang
-<br>Kathy Kong
-<br>Julian Cervantes
-<br>Roma Desai
-<br>Teresa Pho<br>
-<br><br><mark class="bold0">Audience</mark><br>
-<br>New & inexperienced users of VR<br>VR Industry Experts <br> Daily Technology Users
+    </div></div>
+
+  <div class="row justify-content-start">
+    <div class="col-6"><div class="airbnbparagraph"><mark class="quote0">Virtual Reality meets Storytelling. <br></mark>
+      Immersing the user to a whole new digital world.
+        Taking them<br> on a journey back to nostalgia and childhood, that is space and<br> constellations! <br> <br>
+
+      	<mark class="quote1">"Imagination will often carry us to worlds that never were.<br> But without it we go nowhere." </mark><br><br><br><br> </div>
 </div>
-<div class="space"><br><br></div>
-<div class="goals">Goals</div>
-<div class="goalspara">
-	We wanted to design an immersive reality in which there is storytelling elements involved. When most people think of virtual reality, they think of 3D digital universe.  While some people are excited the uprising technological applications it could have on the industry, others may fear the idea of being in a digital world. Unfamiliar, cold, but there was more than that. Technology doesn’t have to be cold. And in this case, we wanted to incorporate a fantasy, space-theme that fiddled with the idea of astrology.<br><br>We wanted to choose a thing that brought more people warmth and nostalgia from childhood. What was that? That was space! Star Wars, Star Trek, Wall-E, astrology signs, constellations, Cosmos, etc. Industries that dealt with consumer goods and media had some type of space themed products in the form of shows, episodes, consumer items (toys, etc) incorporated. It’s one thing to digitally create a “galaxy” and universe that was set in outer space, but it’s another thing to take what most users have heard of, which were astrology signs and constellations and have them transform into life to engage guests and remove the stigma of virtual reality being an unfamiliar, cold, or intimidating space!
+    </div>
 </div>
-<div class="space"><br><br></div>
-<div class="progress">Progress </div>
-<div class="progresspara">
-	We set out early in the semester to create a fantasy and sci-fi space theme that allowed users to roam around the planet and interact with various creatures and objects. Constellations were also available for users to connect the stars of which transforms into the astrology creature (i.e. if the constellation is Aries, a ram will come to life).
-
-We wanted to create a universe that allowed users to immerse themselves into a universe that is not possible in the real-world. </div>
-<div class="space"><br><br></div>
-<div class="ca">Concept Art (Moodboards) </div>
-<div id="mb1"><img src="mb1.png" alt="mb1pic" width="350" height="200"> </div>
-
-<div id="mb2"><img src="mb2.png" alt="mb2pic" width="350" height="200"> </div>
-
-<div id="theme"><img src="theme.png" alt="themepic" width="350" height="200"> </div>
 
 
-<div id="ls"><img src="landscape.png" alt="lspic" width="350" height="200"> </div>
 
-<div id="colors"><img src="colors.png" alt="cpic" width="350" height="200"> </div>
+<div class="container">
+  <div class="row justify-content-start">
+    <div class="col-4"><div class="subhead">TEAM</div></div>
+    <div class="col-4"><div class="subhead2">GOALS</div></div>
+    </div> </div>
 
-<div id="glow"><img src="glow.png" alt="gpic" width="350" height="200"> </div>
+
+    <div class="container">
+      <div class="row justify-content-start">
+        <div class="col-4"><div class="subhead3">    <mark class="bold1"><br>
+      Project Managers:</mark>
+        <br>Iris Yon
+        <br>Howe Cui
+        <br>
+          <mark class="bold1">  <br>Team Members:</mark>
 
 
-<div id="plants"><img src="plants.png" alt="ppic" width="350" height="200"> </div>
+          <br>Hoaian Dang
+        <br>Kathy Kong
+        <br>Julian Cervantes
+        <br>Roma Desai
+        <br>Teresa Pho<br></div></div>
+        <div class="col-7"><div class="subhead4">	We wanted to design an immersive reality in which there is storytelling elements involved. When most people think of virtual reality, they think of 3D digital universe.  While some people are excited the uprising technological applications it could have on the industry, others may fear the idea of being in a digital world. Unfamiliar, cold, but there was more than that. Technology doesn’t have to be cold. And in this case, we wanted to incorporate a fantasy, space-theme that fiddled with the idea of astrology.<br><br>We wanted to choose a thing that brought more people warmth and nostalgia from childhood. What was that? That was space! Star Wars, Star Trek, Wall-E, astrology signs, constellations, Cosmos, etc. Industries that dealt with consumer goods and media had some type of space themed products in the form of shows, episodes, consumer items (toys, etc) incorporated. It’s one thing to digitally create a “galaxy” and universe that was set in outer space, but it’s another thing to take what most users have heard of, which were astrology signs and constellations and have them transform into life to engage guests and remove the stigma of virtual reality being an unfamiliar, cold, or intimidating space!
+</div></div>
+        </div>
+        <div class="row justify-content-start">
+          <div class="col-4"><div class="subhead22">AUDIENCE</div></div>
+          <div class="col-4"><div class="subhead2"></div></div>
+          </div> </div>
 
-<div id="const"><img src="constellations.png" alt="ccpic" width="350" height="200"> </div>
 
-<div class="refl">Reflections</div>
-<div class="reflpara">
-	As someone who was pre-optometry, I was very interested in a lot of the optics and physics portions that went behind the scenes in coursework of undergrad prerequisites for optometry school. However, I still appreciated the work that went into interacting and administration of healthcare services to patients.
-<br><br>
-	From the hobbies that stemmed from when I was 12 years old, I have been experimenting with different forms of design for several years. Whether that be 2D UI/UX design, motion graphics, animations, to 3D design such as cadding and modeling, all of which have allowed me to dive into VR due to its integration with optics and design.
-	<br><br>
-	With that in mind, I have always been curious of VR, but after researching the different VR online groups and exploring the work that they do, I wanted to learn more about it. Months later, I decided to attend a Facebook Social VR tech talk to which I was surprised to see the amount of women that showed interest in this field, one leading the panel herself.
-<br><br>
-	After the insightful talk and several conversations with industry experts and guests that attended, I walked up to the female panelist and spoke with her on how she got started, what she learned in this journey, her transitions from starting from the ground up, and much more, and to my delight, she shared me her experiences and encouraged me to experiment with VR applications, start any side projects, and get involved in as many clubs or projects that would introduce me to VR. She said anyone can do it,  and that all it takes was passion and curiosity.
-<br><br>
-	The school year starts and I end up joining the Virtual Reality club on campus at UC Berkeley. There I met incredible people of all sorts of backgrounds, passions, and new perspectives. I learned from others how they approached and incorporated their creative element into it. Some were civil engineers, others were film majors, and the list goes on. I was excited to learn and be surrounded by such passionate people.
-<br><br>
-	I came in with little to no experience in the area of VR. At the time, I only knew how to CAD and 3D model. However, joining a project team that incorporated storytelling and VR has helped me grown a lot. Not only do I understand the crucial element of storytelling and am more familiar with the tools and softwares utilized in VR, but I found a community amidst the large campus with supportive project managers and team members. It was a steep learning curve as someone with little experience, but their support and office hours have helped me grew and absorb a ton.
-<br><br>
-	With the challenges and struggles, it was all worth it when we were finally able to complete and showcase the project to VR professionals and students as well as share our own experiences and bond with other teams.
-<br><br>
-	Without a doubt, I’d rather be challenged and learn a ton than not be challenged or be able to get out of my comfort zone.  That’s what makes life more interesting and fun after all!
-</div>
-</body>
-</html>
+          <div class="container">
+            <div class="row justify-content-start">
+
+              <div class="col-6"><div class="subhead44">New & inexperienced users of VR<br>
+VR Industry Experts </div></div>
+<div class="col-4"></div>
+      </div></div>
+
+
+
+            <div class="container">
+              <div class="row">
+              <div class="col-4"><div class="question">VIDEO</div></div>
+
+              <div class="col-4">
+              <div class="vid"><iframe width="460" height="315" src="https://www.youtube.com/embed/nj0TqXeXQGo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div></div>
+
+
+
+                          <div class="container">
+                            <div class="row">
+                              <div class="col-4"></div>
+                            <div class="col-6"><div class="question3">The video above showcases the various group members in my project team for Virtual Reality's Fall 2018 Immersive Reality Project.
+Skip to 0:36 to see our project in action.<br><br>
+
+Videography & Editing: Teresa Pho</div></div>  </div></div>
+
+      <div class="container">
+        <div class="row">
+        <div class="col-4"><div class="question">PROGRESS</div></div>
+
+        <div class="col-7"><div class="question2"> We set out early in the semester to create a fantasy and sci-fi space theme that allowed users to roam around the planet and interact with various creatures and objects. Constellations were also available for users to connect the stars of which transforms into the astrology creature (i.e. if the constellation is Aries, a ram will come to life). We wanted to create a universe that allowed users to immerse themselves into a universe that is not possible in the real-world.</div></div></div>
+        </div>
+
+
+              <div class="container">
+                <div class="row">
+                <div class="col-4"><div class="question">CONCEPT/MOOD BOARDS</div></div>
+                <div class="col-4"></div>
+              </div></div>
+
+          <div class="container">
+              <div class="row">
+
+                <div class="col-4"></div>
+              <div class="col-4">
+              <div class="mb1"><img src="mb1.png" alt="mb1pic" width="350" height="200"></img> </div></div>
+              <div class="col-4">
+              <div class="mb2"><img src="mb2.png" alt="mb2pic" width="350" height="200"> </img></div></div>
+</div></div>
+
+
+<div class="container">
+    <div class="row">
+
+      <div class="col-4"></div>
+  <div class="col-4">
+      <div class="t"><img src="theme.png" alt="themepic" width="350" height="200"> </img></div></div>
+  <div class="col-4">
+      <div class="l"><img src="landscape.png" alt="lspic" width="350" height="200"> </img></div></div>
+    </div></div>
+
+
+
+
+      <div class="container">
+          <div class="row">
+            <div class="col-4"></div>
+        <div class="col-4">
+            <div class="c"><img src="colors.png" alt="cpic" width="350" height="200"> </img></div></div>
+        <div class="col-4">
+            <div class="g"><img src="glow.png" alt="gpic" width="350" height="200"> </img></div></div>
+          </div></div>
+
+
+                          <div class="container">
+                              <div class="row">
+                                <div class="col-4"></div>
+                            <div class="col-4">
+                                <div class="pla"><img src="plants.png" alt="ppic" width="350" height="200"> </img></div></div>
+                            <div class="col-4">
+                                <div class="cons"><img src="constellations.png" alt="ccpic" width="350" height="200"> </img></div></div>
+                              </div></div>
+
+
+
+                                    <div class="container">
+                                      <div class="row">
+                                      <div class="col-4"><div class="question">REFLECTIONS</div></div>
+
+                                      <div class="col-7"><div class="question2"> 	As someone who was pre-optometry, I was very interested in a lot of the optics and physics portions that went behind the scenes in coursework of undergrad prerequisites for optometry school. However, I still appreciated the work that went into interacting and administration of healthcare services to patients.
+                                      <br><br>
+                                      	From the hobbies that stemmed from when I was 12 years old, I have been experimenting with different forms of design for several years. Whether that be 2D UI/UX design, motion graphics, animations, to 3D design such as cadding and modeling, all of which have allowed me to dive into VR due to its integration with optics and design.
+                                      	<br><br>
+                                      	With that in mind, I have always been curious of VR, but after researching the different VR online groups and exploring the work that they do, I wanted to learn more about it. Months later, I decided to attend a Facebook Social VR tech talk to which I was surprised to see the amount of women that showed interest in this field, one leading the panel herself.
+                                      <br><br>
+                                      	After the insightful talk and several conversations with industry experts and guests that attended, I walked up to the female panelist and spoke with her on how she got started, what she learned in this journey, her transitions from starting from the ground up, and much more, and to my delight, she shared me her experiences and encouraged me to experiment with VR applications, start any side projects, and get involved in as many clubs or projects that would introduce me to VR. She said anyone can do it,  and that all it takes was passion and curiosity.
+                                      <br><br>
+                                      	The school year starts and I end up joining the Virtual Reality club on campus at UC Berkeley. There I met incredible people of all sorts of backgrounds, passions, and new perspectives. I learned from others how they approached and incorporated their creative element into it. Some were civil engineers, others were film majors, and the list goes on. I was excited to learn and be surrounded by such passionate people.
+                                      <br><br>
+                                      	I came in with little to no experience in the area of VR. At the time, I only knew how to CAD and 3D model. However, joining a project team that incorporated storytelling and VR has helped me grown a lot. Not only do I understand the crucial element of storytelling and am more familiar with the tools and softwares utilized in VR, but I found a community amidst the large campus with supportive project managers and team members. It was a steep learning curve as someone with little experience, but their support and office hours have helped me grew and absorb a ton.
+                                      <br><br>
+                                      	With the challenges and struggles, it was all worth it when we were finally able to complete and showcase the project to VR professionals and students as well as share our own experiences and bond with other teams.
+                                      <br><br>
+                                      	Without a doubt, I’d rather be challenged and learn a ton than not be challenged or be able to get out of my comfort zone.  That’s what makes life more interesting and fun after all!
+</div></div></div>
+                                      </div>
+
+
+</body></html>
