@@ -1,75 +1,177 @@
-<!doctype html>
-<html>
-<head>
-<meta charset="utf-8">
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0  maximum-scale=1 user-scalable=no">
-<title>Portfolio Home</title>
-<link href="Portfolio.css" rel="stylesheet" type="text/css">
-<link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:800|Rubik" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Muli|Roboto+Mono" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Muli:400,700,800" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
-<link rel="stylesheet" href="http://TeresaPho.github.io/Portfolio.css">
-<link rel='shortcut icon' type='image/x-icon' href='fai.ico' />
-<!--<link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Portfolio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="Portfolio.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
+
+  <script>
+  // When the user clicks on div, open the popup
+  function myFunction() {
+    var popup = document.getElementById("myPopup");
+    popup.classList.toggle("show");
+  }
+  </script>
+
+
 </head>
 <body>
-	<!--<div class = "logo-square"> TP.</div>-->
-	<div class="initials">	<a href="Portfolio.html" class="initials"> TP. </a></div>
-	<div class= "menuclass">
-		<div id="menu">
-			<ul>
-				<li><a href="Portfolio.html">Works</a></li>
-				<li><a href="about.html">About</a></li>
-				<li><a href="misc.html">Misc</a></li>
-			</ul>
+
+  <div class="header">
+
+    <div class="progress-container">
+      <div class="progress-bar" id="myBar"></div>
+    </div>
+  </div>
+
+
+
+
+	<div class="jumbotron text-left" style="background:transparent !important" class="jumbotron">
+	  <div class="initials"><a href="Works.html" class="initials"> TP. </a></div>
 	</div>
+	<nav class="navbar navbar-expand-lg navbar-light ">
+
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+	  </button>
+	  <div class="collapse navbar-collapse" id="navbarNav">
+	    <ul class="navbar-nav ml-auto">
+	      <li class="nav-item active">
+	        <a class="nav-link" href="Portfolio.html">Works <span class="sr-only">(current)</span></a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="about.html">About</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="misc.html">Misc</a>
+	      </li>
+
+	    </ul>
+	  </div>
+	</nav>
+  <div class="row justify-content-center">
+    <div class="col-8"><div class= "introduction"><mark class="bigger">Hi there. My name is <mark class= "blue"> Teresa Pho.</mark><br></mark> <br> <mark class="yellow">#Product Designer</mark> <mark class="purp">#Virtual Reality</mark>   <mark class="thin">#Health Advocate</mark>
+ <mark class="pink">#UC Berkeley</mark>   <mark class="pink">#Third Year</mark>
+</br> <mark class="pa">I love breaking down challenges and creating products that bridge the gap between <br>empathy, efficacy, creativity, and design. <br><br>Always eager to meet new people and learn, so HMU if you want to collab :)<br><br></mark>
+
+
+
+
+<div class="popup" onclick="myFunction()">*LAST UPDATED: 03 March 2019*
+  <span class="popuptext" id="myPopup">03 March 2019</span>
 </div>
-<div class= "introduction"> <mark class="bigger"> Hello. My name is <mark class= "blue"> Teresa Pho</mark>. </mark> <br> <br> <mark class="thin">I am a Product Designer x Virtual Reality Developer x Healthcare Advocate </mark></br> </br> who loves to break down challenges and create products that bridge the  <br><br> gap between empathy, creativity, and design. </br></br> </div>
-<div class= "work-heading"> <mark class="workheadingbold"> Featured Works </mark> </div>
-	<div id="workrec"></div>
 
-	<div id="image1"> <img src="homeair.png" alt="image1pic" width="500" height="400"> </div>
-	<div id="work1">
-		<a href="work1.html" id="work1">Airbnb Experience Web Redesign</a>
-		</div>
-	<div id="paragraph1">
-Hosts are chefs, artists, and other in-the-know locals like you who give their guests access to activities and places they can’t typically find on their own.
-The activities are designed and led by locals to share their community and perspectives.
-<br><br>Learn more about the new redesign of the <mark class="orange">Airbnb Experience!</mark>
+    <br><br>
+   </br></br> </div>
 </div>
+  </div>
+  <div class="container">
+    <div class="row justify-content-center">
+
+    <div class="col-md-2">	<div id="image1"> <img src="homeair.png"  alt="image1pic" width="450" height="350"> </div></div>
+      <div class="col-md-6 offset-md-3">	<div class="form-group">
+      		<a style="text-decoration:none;" href="work1.html" id="work1">Airbnb Experience Web Redesign<br></a>
+
+        <mark class="paragraph1">
+      <br>Hosts are chefs, artists, and other in-the-know locals like you who give their guests access to activities and places they can’t typically find on their own.
+      The activities are designed and led by locals to share their community and perspectives.
+      <br>Learn more about the new redesign of the <mark class="orange">Airbnb Experience!</mark></mark>
+    </div>
+      </div>
+
+      <div class="w-100"></div>
+      <div class="col-md-4 offset-md-1">
+      <div id="hcdimage1"> <img src="ideomockup.png" alt="hcdintro" width="160" height="280"></div></div>
+
+        <div class="col-md-6 ">	<div class="form-group"><a style="text-decoration:none;" href="work2.html" id="work2">IDEO & +Acumen Human-Centered<br> Design Project<br></a>
+
+          <mark class="paragraph2"><br>
+            A 3 month IDEO and +Acumen course that challenged my team and I to address the issue of inclusiveness of disabled people in the workforce. </br> Learn more about the prototype that we formed!
+          </mark></div>
+        </div>
+
+        <div class="w-100"></div>
+
+      </div>
+    </div>
 
 
-<div id="hcdimage1"> <img src="ideomockup.png" alt="hcdintro" width="160" height="280"></div></div>
-	<div id="work2">
-		<a href="work2.html" id="work2">IDEO & +Acumen Human-Centered<br> Design Project</a>
-		</div>
-	<div id="paragraph2"> A 3 month IDEO and +Acumen course that challenged my team and I to address the issue of inclusiveness of disabled people in the workforce. <br> </br> Learn more about the prototype that we formed!
-	</div>
+    <div class="container">
+      <div class="row justify-content-center">
 
-	<div id="image3"><img src="vrmac.png" alt="image3pic" width="250" height="200"> </div>
-	<div id="work3">
-		<a href="work3.html" id="work3">Virtual Reality [Immersive <br>Reality] Project</a>
-	</div>
-<div id="paragraph3"> Developing an immersive reality environment that takes the user to a space-theme world that allow interaction with constellations and the diverse set of astrology creatures, all of which are created in Unity, Maya, and Pixar Renderman.<br> </br>
-</div>
+      <div class="col-md-2">	<div id="image"> <img src="vrmac2.png"  alt="image1pic" width="450" height="350"> </div></div>
+        <div class="col-md-6 offset-md-3">	<div class="form-group">
+        		<a style="text-decoration:none;" href="work3.html" id="work3">Virtual Reality [Immersive Reality] Project<br></a>
 
+          <mark class="paragraph1">
+        <br>Developing an immersive reality environment that takes the user to a space-theme world that allow interaction with constellations and the diverse set of astrology creatures, all of which are created in Unity, Maya, and Pixar Renderman.</br>
+</mark>
+      </div>
+        </div>
 
-	<div id="image4"> <img src="kivaimage1persp.png" alt="image1pic" width="300" height="200"> </div>
-<div id="work4">
-	<a href="work4.html" id="work4"> Human-Centered Design <br>Tutorial Series</a>
-	</div>
-<div id="paragraph4"> <br>Applying the human-centered design process to tackle on the various design challenges to enable users to learn and be introduced to the different concepts in design through a tutorial series.<br> </br></br>
-</div>
+        <div class="col-md-2">	<div id="image"> <img src="kivah.png"  alt="image1pic" width="450" height="350"> </div></div>
+          <div class="col-md-6 offset-md-3">	<div class="form-group">
+          		<a style="text-decoration:none;" href="work4.html" id="work4">Human Centered Design Tutorial Project<br></a>
+
+            <mark class="paragraph1">
+          <br>Developing an immersive reality environment that takes the user to a space-theme world that allow interaction with constellations and the diverse set of astrology creatures, all of which are created in Unity, Maya, and Pixar Renderman.</br>
+  </mark>
+        </div>
+          </div>
+
+        </div>
+      </div>
 <!--
-<div class="flex-container5"></div>
-	<div id="work5">Miscellaneous Projects</div>
-	<div id="paragraph5"> Piqued <mark class="orange">favour</mark> stairs it enable exeter as seeing. She <br> met improving but engrossed sincerity age. Better but </br> gay denied abroad are. Attachment astonished to on <br> appearance imprudence so collecting in excellence. </br> <br> The for fully had she there leave merit enjoy forth. </br>
-			His followed carriage proposal entrance directly had <br> elegance. Greater for cottage gay parties natural. <br> Remaining he furniture on he discourse suspected it. <br> </br>
-	</div>
--->
+        <div class="col-md-4">	<div id="image3"> <img src="vrmac.png"  alt="image3pic" width="250" height="200"> </div></div>
+              <div class="col-md-5 ">	<div class="form-group">
+              		<a style="text-decoration:none;" href="work3.html" id="work3">Virtual Reality [Immersive Reality] Project<br></a>
+
+                <mark class="paragraph3">
+              <br>Developing an immersive reality environment that takes the user to a space-theme world that allow interaction with constellations and the diverse set of astrology creatures, all of which are created in Unity, Maya, and Pixar Renderman.</br>
+            </mark>
+            </div>
+            </div>
 </div>
+<div class="row justify-content-center">
+
+          <div class="col align-self-center">	<div id="image4"> <img src="kivaimage1persp.png"  alt="image4pic" width="300" height="200"> </div></div>
+                <div class="col-md-5 ">	<div class="form-group">
+                    <a style="text-decoration:none;" href="work4.html" id="work4">Human-Centered Design <br>Tutorial Series<br></a>
+
+                  <mark class="paragraph4">
+<br>Applying the human-centered design process to tackle on the various design challenges to enable users to learn and be introduced to the different concepts in design through a tutorial series.<br> </br></br>              </mark>
+              </div>
+              </div>
+
+  </div>
+
+</div>
+-->
+
+
+
+<script>
+// When the user scrolls the page, execute myFunction
+window.onscroll = function() {myFunction()};
+
+function myFunction() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("myBar").style.width = scrolled + "%";
+}
+</script>
+
+
+
 </body>
 </html>
