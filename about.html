@@ -1,75 +1,145 @@
-<!doctype html>
-<html>
+
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Portfolio Home</title>
-<link href="about.css" rel="stylesheet" type="text/css">
-<link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:800|Rubik" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Muli|Roboto+Mono" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Muli:400,700,800" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Cantarell" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-<link rel='shortcut icon' type='image/x-icon' href='fai.ico' />
+  <title>Portfolio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="About.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
+
+  <script>
+  // When the user clicks on div, open the popup
+  function myFunction() {
+    var popup = document.getElementById("myPopup");
+    popup.classList.toggle("show");
+  }
+  </script>
+
+
 </head>
 <body>
-<div class="initials">	<a href="Portfolio.html" class="initials"> TP. </a></div>
-	<div class= "menuclass">
-		<div id="menu">
-			<ul>
-				<li><a href="Portfolio.html">Works</a></li>
-				<li><a href="about.html">About</a></li>
-				<li><a href="misc.html">Misc</a></li>
-			</ul>
+
+  <div class="header">
+
+    <div class="progress-container">
+      <div class="progress-bar" id="myBar"></div>
+    </div>
+  </div>
+
+
+
+
+	<div class="jumbotron text-left" style="background:transparent !important" class="jumbotron">
+	  <div class="initials"><a href="Works.html" class="initials"> TP. </a></div>
 	</div>
-</div>
+	<nav class="navbar navbar-expand-lg navbar-light ">
 
-<div class="intro"><p>HI, THERE!</p></div>
-<div class="lower"> Third Year <br> Integrative Biology Major<br> UC Berkeley C/O May 2020 </div>
-<div class="lower2"> So, you might be wondering what I like to do, what my hobbies are, passions, etc.
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+	  </button>
+	  <div class="collapse navbar-collapse" id="navbarNav">
+	    <ul class="navbar-nav ml-auto">
+	      <li class="nav-item active">
+	        <a class="nav-link" href="#">Works <span class="sr-only">(current)</span></a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#">About</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#">Misc</a>
+	      </li>
 
-  To give you a bit of insight of who I am, I am a healthcare advocate, social impact activist, design/videography/VR connoisseur, and a never-ending learner.
-  The intersections between several disciplines excite me! Why? Because every day, it's like we're piecing together a puzzle, in order to better understand our world,
-  better improve the lives of those around us, and find what passions make us alive and bring the best out of us! <br><br>
-
-	With my extracurriculars, I chose to really focus around projects that involve a ton of exposure and interaction among people. I grew to enjoy working with people ranging from low-income populations to many patients through various healthcare opportunities (clinical work, hospitalized patients, etc). Whether I'm working with hospitalized patients to working on side projects to help the visually disabled, I am passionate in contributing back to my community in that aspect!
-<br><br>
-  Prior to this, I was pre-optometry for half my entire college career due to my interest in physics, optics, and patient interaction. However, as a child, I loved tinkering with different softwares and programs as someone who didn't grow up with a lot of resources. But with one computer, it allowed me to explore the digital world and experiment with a
-  variety of designs mediums, style, and tools. <br><br>
-
-	So with an undying love for design and optics, I eventually found a new interesting between the interesections this past summer, which is VR!
-</div>
+	    </ul>
+	  </div>
+	</nav>
 
 
 
-<div class="bold"><mark class="blue">Currently:<br></mark>
-  AR/VR Developer on cross-collab team with VR@Berkeley & Schools of Information <br>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-4"></div>
+      <div class="col-6"> <div class="introduction2">WELCOME TO MY BIO</div></div>
+  </div></div>
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-13">
+
+        <div class="row justify-content-center">
+          <div class="col-8 col-sm-6">
+
+            <div class="profile"> <img src="biopic.jpg" alt="intro" width="300" height="230"></img></div>
+          </div>
+          <div class="col-4 col-sm-6"> <div class="para">
+            THIRD YEAR<BR>
+            INTEGRATIVE BIOLOGY MAJOR<BR>
+            UC BERKELEY C/O MAY 2020</div>
+          </div>
+
+          <div class="row justify-content-start">
+
+              <div class="col-sm-2"></div>
+          <div class="col-8"> <div class="para2"> So, you might be wondering what I like to do, what my hobbies are, passions, etc.
+
+            To give you a bit of insight of who I am, I am a healthcare advocate, social impact activist, design/videography/VR connoisseur, and a never-ending learner.
+            The intersections between several disciplines excite me! Why? Because every day, it's like we're piecing together a puzzle, in order to better understand our world,
+            better improve the lives of those around us, and find what passions make us alive and bring the best out of us! <br><br>
+
+          	With my extracurriculars, I chose to really focus around projects that involve a ton of exposure and interaction among people. I grew to enjoy working with people ranging from low-income populations to many patients through various healthcare opportunities (clinical work, hospitalized patients, etc). Whether I'm working with hospitalized patients to working on side projects to help the visually disabled, I am passionate in contributing back to my community in that aspect!
+          <br><br>
+            Prior to this, I was pre-optometry for half my entire college career due to my interest in physics, optics, and patient interaction. However, as a child, I loved tinkering with different softwares and programs as someone who didn't grow up with a lot of resources. But with one computer, it allowed me to explore the digital world and experiment with a
+            variety of designs mediums, style, and tools. <br><br>
+
+          	So with an undying love for design and optics, I eventually found a new interesting between the interesections this past summer, which is VR!
+          <br>
+<br>
+
+With that intro, it's always better to chat in person, so let's connect!
+        </div></div>
+
+          </div>
+        </div>
+
+          <div class="row justify-content-start">  <div class="col-2">
+
+            <div class="logobox">	<a href="https://www.linkedin.com/in/teresa-pho/"><img src="llogo.png" alt="llogo" width="25" height="25"></a></div></div>
+            <div class="col-2">
+
+              <div class="logobox2">	<a href="https://youtu.be/V4O_0pI5aTw"><img src="ylogo.png" alt="ylogo" width="25" height="25"></a></div></div>
+
+              <div class="col-2">
+
+              <div class="logobox3"><a href="https://www.dropbox.com/s/8o4ztebc62vepit/Company%20Resume%20Compress.pdf?dl=0" style="text-decoration:none"><font color="505050">RESUME</font></a></div></div>
+
+
+              <div class="col-2">
+              <div class="logobox4">	<a href="https://dribbble.com/lookitsteresa"><img src="ddlogo.png" alt="dddlogo" width="25" height="25"></a></div></div>
+
+          </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+    <div class="container">  <div class="col-4 col-sm-6"> <div class="para4">Currently:</div></div></div>
+
+        <div class="container">  <div class="col-4 col-sm-6"> <div class="para44">AR/VR Developer for Schools of Information <br>
 Mentor and VR Developer in BitbyBit <br>
 Product/Motion Graphics Designer for SkyDeck <br>
-Instructor for Pre-Health Decal Course <br>
- </div>
-
-<div class="profile"> <img src="cprofic.JPG" alt="intro" width="450" height="300"></div>
+Instructor for Pre-Health Decal Course </div></div></div>
 
 
 
+    <div class="container">  <div class="col-4 col-sm-6"> <div class="para45">Glimpse of My Life</div></div></div>
 
-
-<div class="line"></div>
-
-<div class="text"> Glimpse of my Daily Life </div>
-
-<div class="vid"><iframe width="450" height="300" src="https://www.youtube.com/embed/V4O_0pI5aTw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-
-
-<div class="logobox4">	<a href="https://dribbble.com/lookitsteresa"><img src="ddlogo.png" alt="dddlogo" width="25" height="25"></a></div>
-
-
-<div class="logobox">	<a href="https://www.linkedin.com/in/teresa-pho/"><img src="llogo.png" alt="llogo" width="25" height="25"></a></div>
-
-<div class="logobox2">	<a href="https://youtu.be/V4O_0pI5aTw"><img src="ylogo.png" alt="ylogo" width="25" height="25"></a></div>
-
-<div class="logobox3">	<a href="https://www.dropbox.com/s/8nf3vbell1pof5b/Teresa%20Pho%20Resume%20for%20Company.pdf?dl=0" style="text-decoration:none"><font color="505050">RESUME</font></a></div>
-
-</body>
-</html>
+    <div class="container"><div class="col-4 col-sm-6">
+    <div class="vid"><iframe width="250" height="200" src="https://www.youtube.com/embed/V4O_0pI5aTw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div></div><div>
