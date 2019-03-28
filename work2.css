@@ -168,6 +168,23 @@ margin-right:5%;
 }
 
 
+#showMe {
+  animation: cssAnimation 0s 5s forwards;
+  visibility: visible;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  text-align: left;
+  margin-left:45%;
+  font-size:20px;
+  margin-top: 5%;
+  line-height:20px;
+  color: #202020;
+
+}
+
+@keyframes cssAnimation {
+  to   { visibility:hidden; }
+}
 
 #airbnbleftrec{
   height: 5px;
