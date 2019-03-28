@@ -1,184 +1,411 @@
-<!doctype html>
-<html>
+
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Portfolio Home</title>
-<link href="work2.css" rel="stylesheet" type="text/css">
-<link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:800|Rubik" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Muli|Roboto+Mono" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Muli:400,700,800" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Cantarell" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
-<link rel='shortcut icon' type='image/x-icon' href='fai.ico' />
+  <title>Portfolio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="Works3.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
+
+  <script>
+  // When the user clicks on div, open the popup
+  function myFunction() {
+    var popup = document.getElementById("myPopup");
+    popup.classList.toggle("show");
+  }
+  </script>
+
+
 </head>
 <body>
-<div class="initials">	<a href="Portfolio.html" class="initials"> TP. </a></div>
-	<div class= "menuclass">
-		<div id="menu">
-			<ul>
-				<li><a href="Portfolio.html">Works</a></li>
-				<li><a href="about.html">About</a></li>
-				<li><a href="misc.html">Misc</a></li>
-			</ul>
+
+<script>$(function(){  // $(document).ready shorthand
+  $('.monster').fadeIn('slow');
+});
+
+$(document).ready(function() {
+
+    /* Every time the window is scrolled ... */
+    $(window).scroll( function(){
+
+        /* Check the location of each desired element */
+        $('.container').each( function(i){
+
+            var bottom_of_object = $(this).position().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+            /* If the object is completely visible in the window, fade it it */
+            if( bottom_of_window > bottom_of_object ){
+
+                $(this).animate({'opacity':'1'},1500);
+
+            }
+
+        });
+        $('.col-4').each( function(i){
+
+            var bottom_of_object = $(this).position().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+            /* If the object is completely visible in the window, fade it it */
+            if( bottom_of_window > bottom_of_object ){
+
+                $(this).animate({'opacity':'1'},1500);
+
+            }
+
+        });
+
+    });
+
+});</script>
+
+
+  <div class="header">
+
+    <div class="progress-container">
+      <div class="progress-bar" id="myBar"></div>
+    </div>
+  </div>
+
+
+
+
+	<div class="jumbotron text-left" style="background:transparent !important" class="jumbotron">
+	  <div class="initials"><a href="Works.html" class="initials"> TP. </a></div>
 	</div>
-</div>
-<div class="head">
-	<div class="hcdimage1intro">Human Centered Design</div>
-		<div class="hcdbigrec">
-			<div id= "hcdleftrec"></div>
-			<div id="hcdrightrec"></div> </div>
-			<div class="hcdimage1"> <img src="ideomockup.png" alt="hcdintro" width="210" height="370"></div></div>
-<div class="hcddate"> May 2018 - August 2018 </div>
-<div class="hcdparagraph"> <mark class="quote0"> Choice. Chance. Change. <br> Addressing and taking steps one at a time to expand<br> inclusiveness.</mark> <br> One of the issues that are still current and very much relevant today<br> is the issue of
- inclusiveness in the workforce. More often than not,<br> there is no specific pipeline or adequate training to manage situations<br> that involve disabled people nor are there enough resources to go<br> around for them to get started into stepping into
-	<br>their new career step. <br> <br>
-				<mark class="quote1">"Coming together is a beginning, keeping together is progress,<br> working together is success." </mark><br><br><br><br> </div>
-<div class="space"><br><br>
-<div class="team">
-<mark class="bold0">Team</mark><br><br>
+	<nav class="navbar navbar-expand-lg navbar-light ">
 
-<mark class="bold1">Team Members:</mark><br>
-<br>Teresa Pho
-<br>Phil Hedayatnia
-<br>Linda Hsu
-<br>Monica Chan
-<br>Nguyen Trang
-<br>Maxime Alardo
-<br><br><mark class="bold0">Audience</mark><br>
-<br>Disabled People <br>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+	  </button>
+	  <div class="collapse navbar-collapse" id="navbarNav">
+	    <ul class="navbar-nav ml-auto">
+	      <li class="nav-item active">
+	        <a class="nav-link" href="#">Works <span class="sr-only">(current)</span></a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#">About</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#">Misc</a>
+	      </li>
+
+	    </ul>
+	  </div>
+	</nav>
+
+
+
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-4">
+        <div id= "airbnbleftrec"></div>
+
+      </div>
+      <div class="col-4">
+        <div id="airbnbrightrec"></div>
+
+      </div></div>
+
+      <div class="row">
+      <div class="col"><div class="airbnbimage1intro">IDEO & +Acumen Human Centered Design Proj.</div>
+      </div></div>
+    </div>
+
+    <div class="container">
+  <div class="row justify-content-around">
+    <div class="col-3"><div class="airbnbdate"> May 2018 - August 2018 </div>
+</div>
+    <div class="col-4">		<div class="airbnbimage1"> <img src="airbnbimage1persp.png" alt="airbnbintro" width="550" height="400">
+</div>
+    </div></div>
+
+  <div class="row justify-content-start">
+    <div class="col-6"><div class="airbnbparagraph"><mark class="quote0">Choice. Chance. Change. <br>
+Addressing and taking steps one at a time to expand
+inclusiveness.  <br> </mark> One of the issues that are still current and very much relevant today
+is the issue of inclusiveness in the workforce. More often than not,
+there is no specific pipeline or adequate training to manage situations
+that involve disabled people nor are there enough resources to go
+around for them to get started into stepping into
+their new career step. <br><br>
+    	<mark class="quote1">"Coming together is a beginning, keeping together is progress,
+working together is success."  </mark><br><br><br><br> </div>
+    </div>
+</div></div>
+
+<div class="container">
+  <div class="row justify-content-start">
+    <div class="col-4"><div class="subhead">TEAM</div></div>
+    <div class="col-4"><div class="subhead2">GOALS</div></div>
+    </div> </div>
+
+
+  <div class="container">
+    <div class="row justify-content-start">
+      <div class="col-4"><div class="subhead3">
+
+
+
+Teresa Pho <br>
+Phil Hedayatnia  <br>
+Linda Hsu  <br>
+Monica Chan  <br>
+Nguyen Trang  <br>
+Maxime Alardo </div></div>
+      <div class="col-6"><div class="subhead4">To implement a solution that brings awareness and improves inclusiveness of disabled people in workforce and encourages active and consistent participation from both sides. To create a stronger bridge and open conversation between abled and disabled people.</div></div>
+      </div> </div>
+
+
+
+        <div class="container">
+          <div class="row justify-content-start">
+            <div class="col-4"><div class="subhead5">AUDIENCE</div></div>
+
+
+            <div class="col-4"><div class="subhead6">CONSTRAINTS</div></div>
+            </div></div>
+
+  <div class="container">
+  <div class="row">
+    <div class="col-4"><div class="subhead7">Disabled People <br>
 Non-Disabled People <br>
-HR Departments<br>
-</div>
-<div class="space"><br><br></div>
-<div class="goals">Goals</div>
-<div class="goalspara">
-	To implement a solution that
-brings awareness and improves
-inclusiveness of disabled people
-in workforce and encourages
-active and consistent
-participation from both sides.
-To create a stronger bridge and
-open conversation between
-abled and disabled people.
-</div>
-<div class="constraints"><br>Constraints</div>
-<div class="constraintspara"><br>
-	Time-extensive in
-	rebuilding HR infrastructure.
-	Implementation of any solution
-	will take time to yield results
-	of progress. Mobile apps
-	and hosting events can be
-	costly.
+HR Departments</div></div>
+    <div class="col-6"><div class="subhead8">Time-extensive in rebuilding HR infrastructure. Implementation of any solution will take time to yield results of progress. Mobile apps and hosting events can be costly.</div></div>
+
+  </div>
 </div>
 
-<div class="space"><br><br></div>
-<div class="question"><br>Question </div>
-<div class="questionpara"><br>How might we
-<mark class="bold2">
-integrate people with and
-without disabilities?</mark></div>
 
-<div class="sig"><br>Significance of Issue</div>
-<div class="sigpara"><br>As of 2017, only 18.7% of the workforce are comprised of disabled people. Diversity encompasses over a variety of different groups,
-and often most than not, the disabled people group does not receive enough recognition or support. This sensitive issue is often
-overlooked or not properly addressed due to the prenotions of both parties (abled vs disabled). With diversity and inclusion
-being a pressing issue of today, my team and I decided to address and tackle on this problem ourselves.</div>
+<div class="container">
+  <div class="row">
+  <div class="col-4"><div class="question">THE QUESTION</div></div>
 
-<div id="problems1"><img src="problems1.jpg" alt="mb1pic" width="550" height="300"> </div>
-<div class="userr">User Research</div>
-<div class="userpara"><mark class="one">Step 1:</mark> Define the problems and what disability is.</div>
-<div class="space"><br></div>
-<div class="userpara2">
-	Before we can research any further, we must ask ourselves,
-"What is a disability?"</div>
-<div class="space"><br><br></div>
-<ol class="userpara3">
-	<li>"A disability is an impairment that may be cognitive, developmental, intellectual,
-mental, physical, sensory, or some combination of these. It substantially affects
-a person's life activities and may be present from birth or occur during a person's
-lifetime."<br><br></li> &<br><br>
-<li>"Disabilities is an umbrella term, covering impairments, activity limitations,
-and participation restrictions."<br></li></div>
-<div class="space"><br><br><br></div>
-<div class="userpara4"><mark class="one">Step 2:</mark> Research on current disability employment/HR issues and analogous scenarios.</div>
-<div class="analogous">Analagous Inspiration</div>
-<ul class="alist">
-	<li>Inclusivity, accessibility, reducing stigma, discrimination</li>
-<li>People living in rural areas</li>
-<li>People without access to fast wifi</li>
-<li>International people (accents or english-speaking skills)
-in interviews</li>
-<li>Personalities in interviewing</li>
-<li>Second language teachers and their methods to help assimilate
-non-native speakers into communities</li>
-<li>Be My Eyes A mobile app that connects those visually impaired
-to volunteers all around the world via video chat.</li>
-<li>Voice Dream Reader A mobile app that allows disabled people to
-read through listening.</li></ul>
+  <div class="col-7"><div class="question2"> How might we integrate people with and without disabilities?</div></div></div>
+  </div>
 
-<div class="issues">Issues</div>
-<ol class="issuespara">
-	<li>Only 35% of U.S. civilians with disabilities between the ages 18
-and 64 had a job in 2015.</li>
-<li>Wyoming is the state with the highest number of employment
-for disabled people, which is 57%.</li>
-<li>Employed persons with a disability were more likely to be
-self-employed than those with no disability.</li>
-<li>Persons with a disability were less likely to work in management,
-professional, and related occupations than
-those without a disability (34.1 percent, compared with 39.9 percent).</li></ol>
+  <div class="container">
+    <div class="row">
+    <div class="col-4"><div class="sig">SIGNIFICANCE OF ISSUE</div></div>
+
+    <div class="col-7"><div class="sig2"> As of 2017, only 18.7% of the workforce are comprised of disabled people. Diversity encompasses over a variety of different groups, and often most than not, the disabled people group does not receive enough recognition or support. This sensitive issue is often overlooked or not properly addressed due to the prenotions of both parties (abled vs disabled). With diversity and inclusion being a pressing issue of today, my team and I decided to address and tackle on this problem ourselves.</div></div></div>
+    </div>
 
 
-<div class="step3"><mark class="one">Step 3:</mark> Define the problems and what disability is.</div>
-<div class="quotes">Quotes</div>
-<div class="quotepara"> “<mark class="parabold">There isn’t a professional development program</mark> for them to
-learn more about how <mark class="parabold">to “handle” cases of disabled employees.</mark>”<br><br>
-“Not a lot of framework around disabilities...
-<mark class="parabold">Increase pipeline in D&I sector.”</mark><br></div>
+      <div class="container">
+        <div class="row">
+        <div class="col-4"></div>
+        <div class="col-6"><div class="problems1"><img src="problems1.jpg" alt="mb1pic" width="550" height="300"> </div></div>
+      </div></div>
 
-<div class="inter">Interviews</div>
-<div class="interima"><img src="interviews.png" alt="interintro" width="700" height="500"></div>
+      <div class="container">
+        <div class="row">
+        <div class="col-4"><div class="user">USER RESEARCH</div></div>
+        <div class="col-6">
+        <div class="userpara"><mark class="one">Step 1:</mark> Define the problems and what disability is.</div></div>
+      </div></div>
 
+    <div class="container">
+      <div class="row">
+        <div class="col-4"></div>
+        <div class="col-6"><div class="userpara2">
+        	Before we can research any further, we must ask ourselves,
+        "What is a disability?"</div></div>
 
-<div class="step4"><mark class="one">Step 4:</mark> Collect and organize main ideas.</div>
-
-<div class="affinity"> Affinity Mapping </div>
-<div class="map"><img src="affmap.jpg" alt="map" width="510" height="450"></div>
-
-
-<div class="idea"> Final Idea </div>
-<div class="final"><img src="final.jpg" alt="map" width="510" height="450"></div>
-
-
-<div class="userjourney"> User Journey & Storyboard </div>
-<div class="storyboard"><img src="storyboard.jpg" alt="map" width="510" height="450"></div>
+    </div></div>
 
 
-<div class="highfi"> High-Fidelity</div>
-<div class="highfiima"><img src="hcd.png" alt="map" width="320" height="550"></div>
+        <div class="container">
+          <div class="row">
+            <div class="col-4"></div>
+            <div class="col-6">
+    <div class="userpara3">
 
-<div class="rf"> Reflections</div>
-<div class="rf1">
-	Even in the 21st century, we still have a great deal to improve upon when it comes to inclusiveness and diversity. In particular, I decided to join with a band of people from San Francisco to tackle on the challenge of inclusiveness of disabled people. This is an issue we all believe needs to be addressed and have more spotlight on, and I learned a great deal of the difficulties, yet motivations and new approaches that the disabled utilize in order to get around of their daily tasks and accomplish the same goals.
-<br><br>
-As someone who is abled, but lives with disabled parents, I had more of an understanding of what they went through as well as the disabled people around me. However, talking to several interviewees (not all interviewees were included in this due for conciseness) inspired me if anything of the new methodologies, resources, and approaches they used to complete a task. For example, Matt had Stargardt’s syndrome, but that did not slow him down from programming and debugging. He used a screenreader to knock off his tasks and always kept a positive perspective and attitude during work. If anything, most of the interviewees stated that they want to showcase more spotlight onto these issues and don’t mind sharing, which is contrary to what most would believe.
-<br><br>
-Prior to this, we created a support network mobile app to connect the disabled to each other as well as to the abled (for job opportunities) while providing a forum like (chatrooms) environment where users can click onto any topic or “chat room” they would like to join to discuss these issues and gather information and resources among each other.
-<br><br>
-If we want to improve, we have to leverage the battlefield, not just for the abled, but as many people out there as possible. This is a required joint effort, and it takes just one person to kick it off!</div>
+    "A disability is an impairment that may be cognitive, developmental, intellectual,
+    mental, physical, sensory, or some combination of these. It substantially affects
+    a person's life activities and may be present from birth or occur during a person's
+    lifetime."<br><br>&<br><br>
+  "Disabilities is an umbrella term, covering impairments, activity limitations,
+    and participation restrictions."<br></div></div></div></div>
 
 
-<div class="working1"><img src="working1.jpg" alt="1" width="300" height="200"></div>
+    <div class="container">
+      <div class="row">
+      <div class="col-4"></div>
+      <div class="col-6">
+      <div class="userpara4"><mark class="one">Step 2:</mark> Research on current disability employment/HR issues and analogous scenarios.</div></div>
+    </div></div>
 
-<div class="working2"><img src="working2.jpg" alt="2" width="300" height="200"></div>
+    <div class="container">
+      <div class="row">
+      <div class="col-4"></div>
+      <div class="col-6"><div class="subhead66">Analagous Inspiration</div></div></div></div>
 
-<div class="working3"><img src="working3.jpg" alt="3" width="300" height="200"></div>
 
-<div class="working4"><img src="team.jpg" alt="3" width="300" height="200"></div>
 
-</body>
-</html>
+      <div class="container">
+        <div class="row">
+        <div class="col-4"></div>
+        <div class="col-6">
+          <ul class="subhead77">
+          	<li>Inclusivity, accessibility, reducing stigma, discrimination</li>
+          <li>People living in rural areas</li>
+          <li>People without access to fast wifi</li>
+          <li>International people (accents or english-speaking skills)
+          in interviews</li>
+          <li>Personalities in interviewing</li>
+          <li>Second language teachers and their methods to help assimilate
+          non-native speakers into communities</li>
+          <li>Be My Eyes A mobile app that connects those visually impaired
+          to volunteers all around the world via video chat.</li>
+          <li>Voice Dream Reader A mobile app that allows disabled people to
+          read through listening.</li></ul>
+
+        </div></div></div></div>
+
+
+<div class="container">
+  <div class="row">
+  <div class="col-4"></div>
+  <div class="col-6"><div class="subhead66">Issues</div></div></div></div>
+
+<div class="container">
+  <div class="row">
+  <div class="col-4"></div>
+  <div class="col-6"><ol class="subhead77">
+  	<li>Only 35% of U.S. civilians with disabilities between the ages 18
+  and 64 had a job in 2015.</li>
+  <li>Wyoming is the state with the highest number of employment
+  for disabled people, which is 57%.</li>
+  <li>Employed persons with a disability were more likely to be
+  self-employed than those with no disability.</li>
+  <li>Persons with a disability were less likely to work in management,
+  professional, and related occupations than
+  those without a disability (34.1 percent, compared with 39.9 percent).</li></ol></div></div></div></div>
+
+  <div class="container">
+    <div class="row">
+    <div class="col-4"></div>
+    <div class="col-6">
+    <div class="userpara4"><mark class="one">Step 3:</mark> Define the problems and what disability is.</div></div>
+  </div></div>
+
+
+        <div class="container">
+          <div class="row">
+          <div class="col-4"><div class="quotes">QUOTES</div></div>
+
+          <div class="col-6"><div class="userpara2">
+            “There isn’t a professional development program for them to learn more about how to “handle” cases of disabled employees.”<br><br>
+
+  “Not a lot of framework around disabilities... Increase pipeline in D&I sector.”</div></div>
+
+      </div></div>
+
+
+
+              <div class="container">
+                <div class="row">
+                <div class="col-4"><div class="quotes">INTERVIEWS</div></div>
+
+                <div class="col-6"><div class="inter"><img src="interviews.png" alt="interintro" width="700" height="500"></img></div></div>
+
+            </div></div>
+
+
+
+
+
+
+  <div class="container">
+    <div class="row">
+    <div class="col-4"></div>
+    <div class="col-6">
+    <div class="userpara4"><mark class="one">Step 3:</mark> Define the problems and what disability is.</div></div>
+  </div></div>
+
+
+
+  <div class="container">
+    <div class="row">
+    <div class="col-4"></div>
+    <div class="col-6"><div class="subhead66">Affinity Mapping</div></div></div></div>
+
+    <div class="container">
+      <div class="row">
+      <div class="col-4"></div>
+      <div class="col-6"><div class="subhead77">We grouped each of our ideas into broader categories and placed similar ideas under the following groups:
+         education, internal support, support network, PD for HR, gamification, company events, and meetup/social/community.</div></div></div>
+
+
+                            <div class="container">
+                              <div class="row">
+                              <div class="col-4"></div>
+                              <div class="col-6"><div class="map"><img src="affmap.jpg" alt="map" width="510" height="450"></div></div></div></div>
+
+
+                                <div class="container">
+                                  <div class="row">
+                                  <div class="col-4"></div>
+                                  <div class="col-6"><div class="subhead661">Final Idea</div></div></div></div>
+
+
+                                    <div class="container">
+                                      <div class="row">
+                                      <div class="col-4"></div>
+                                      <div class="col-6"><div class="subhead77">In the end, we settled for the support network idea where we wanted
+                                      to branch further into developing it more into a mentorship and anonymous community that connects to people from different companies.</div></div></div></div>
+
+                                      <div class="container">
+                                        <div class="row">
+                                        <div class="col-4"></div>
+                                        <div class="col-6">
+                                            <div class="final"><img src="final.jpg" alt="map" width="510" height="450"></div></div></div></div>
+
+
+                                            <div class="container">
+                                              <div class="row">
+                                              <div class="col-4"></div>
+                                              <div class="col-6"><div class="subhead661">User Journey and Storyboarding</div></div></div></div>
+
+
+        <div class="container">
+          <div class="row">
+          <div class="col-4"></div>
+          <div class="col-6">
+            <div class="storyboard"><img src="storyboard.jpg" alt="map" width="510" height="450"></div>
+</div></div></div></div>
+
+
+<div class="container">
+  <div class="row">
+  <div class="col-4"><div class="quotes1">HIGH FIDELITY</div></div>
+
+  <div class="col-6">
+  <div class="highfiima"><img src="hcd.png" alt="map" width="320" height="550"></div></div>
+
+</div></div>
+
+
+        <div class="container">
+          <div class="row">
+          <div class="col-4"><div class="quotes1">REFLECTIONS</div></div>
+
+          <div class="col-6"><div class="subhead778">
+            Even in the 21st century, we still have a great deal to improve upon when it comes to inclusiveness and diversity. In particular, I decided to join with a band of people from San Francisco to tackle on the challenge of inclusiveness of disabled people. This is an issue we all believe needs to be addressed and have more spotlight on, and I learned a great deal of the difficulties, yet motivations and new approaches that the disabled utilize in order to get around of their daily tasks and accomplish the same goals.
+          <br><br>
+          As someone who is abled, but lives with disabled parents, I had more of an understanding of what they went through as well as the disabled people around me. However, talking to several interviewees (not all interviewees were included in this due for conciseness) inspired me if anything of the new methodologies, resources, and approaches they used to complete a task. For example, Matt had Stargardt’s syndrome, but that did not slow him down from programming and debugging. He used a screenreader to knock off his tasks and always kept a positive perspective and attitude during work. If anything, most of the interviewees stated that they want to showcase more spotlight onto these issues and don’t mind sharing, which is contrary to what most would believe.
+          <br><br>
+          Prior to this, we created a support network mobile app to connect the disabled to each other as well as to the abled (for job opportunities) while providing a forum like (chatrooms) environment where users can click onto any topic or “chat room” they would like to join to discuss these issues and gather information and resources among each other.
+          <br><br>
+          If we want to improve, we have to leverage the battlefield, not just for the abled, but as many people out there as possible. This is a required joint effort, and it takes just one person to kick it off!</div></div>
+
+      </div></div>
+</body></html>
